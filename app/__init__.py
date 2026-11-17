@@ -17,13 +17,19 @@ def create_app(config_name=None):
     # connect extensions to this app
     db.init_app(app)
     migrate.init_app(app, db)
-    #login_manager.init_app(app)
+    login_manager.init_app(app)
+    login_manager.login_view = "auth.login"           # NEW: where @login_required redirects
+    login_manager.login_message = "Please log in to access this page."
+    login_manager.login_message_category = "warning"
     csrf.init_app(app)
 
     from . import models  # NEW: so Flask-Migrate can see the tables
 
     from .main import main_bp
     app.register_blueprint(main_bp)
+
+    from .auth import auth_bp                         # NEW
+    app.register_blueprint(auth_bp, url_prefix="/auth")
 
     from .commands import register_commands  # NEW
     register_commands(app)                    # NEW

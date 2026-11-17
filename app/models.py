@@ -3,7 +3,7 @@ from datetime import datetime, date, timezone
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from .extensions import db
+from .extensions import db, login_manager
 
 
 def utcnow():
@@ -84,3 +84,12 @@ class Expense(db.Model):
 
     def __repr__(self):
         return f"<Expense {self.amount} {self.description}>"
+
+
+
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    """Flask-Login calls this on every request to get the logged-in user."""
+    return db.session.get(User, int(user_id))
