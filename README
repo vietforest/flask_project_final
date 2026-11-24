@@ -1,20 +1,49 @@
-per fare paritire il server, usare commando: flask run
+## ▶️ Running the app
 
+Start the development server:
 
+```bash
+flask run
+```
 
-## Demo data
+The app is then available at http://127.0.0.1:5000.
+
+## 👤 Demo data
+
+Create the default categories and the demo users:
+
+```bash
 flask seed        # default categories
 flask seed-demo   # demo users + 60 random expenses each
+```
 
-| Username   | Password  | Role  |
-|------------|-----------|-------|
-| demo       | demo1234  | user  |
-| mario      | mario1234 | user  |
-| admin_demo | admin1234 | admin |
+| Username     | Password    | Role  |
+|--------------|-------------|-------|
+| `demo`       | `demo1234`  | user  |
+| `mario`      | `mario1234` | user  |
+| `admin_demo` | `admin1234` | admin |
 
+To give the `demo` user 12 months of realistic expenses, generate them and import them
+(this replaces the random ones):
 
+```bash
 python scripts/generate_data.py --seed 42
 flask import-csv data/transactions.csv --user demo --replace
+```
 
+## 🧪 Tests
 
-Per API si fa un import di collection anche environment (quando il server è già partito)
+### API tests (Postman)
+
+1. Start the server with `flask run`.
+2. In Postman, import both files from `tests/postman/`: the **collection** and the **environment**.
+3. Select the **My Wallet local** environment and run the collection.
+
+### UI tests (Playwright)
+
+1. Start the server with `flask run` (the tests use the demo account).
+2. In a second terminal, run:
+
+```bash
+pytest tests/ui/test_login.py -v
+```
