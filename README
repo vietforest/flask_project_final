@@ -1,3 +1,7 @@
+per fare paritire il server, usare commando: flask run
+
+
+
 ## Demo data
 flask seed        # default categories
 flask seed-demo   # demo users + 60 random expenses each
@@ -11,3 +15,6 @@ flask seed-demo   # demo users + 60 random expenses each
 
 python scripts/generate_data.py --seed 42
 flask import-csv data/transactions.csv --user demo --replace
+
+
+Per API si fa un import di collection anche environment (quando il server è già partito)
