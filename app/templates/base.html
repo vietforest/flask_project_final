@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}My Wallet{% endblock %}</title>
+  <title>{% block title %}My Wallet{% endblock %}</title>  <!-- CSRF token for JavaScript fetch() calls to the API (send it as the X-CSRFToken header) -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <!-- Nunito: the rounded, friendly font of the design -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

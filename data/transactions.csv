@@ -1,683 +1,709 @@
 date,description,category,amount
 2025-12-01,Monthly rent,Housing,450.00
-2025-12-01,Coffee & croissant,Food,3.79
-2025-12-01,Shoes - Caracciolo Store,Shopping,37.13
-2025-12-02,Groceries - Asmundo Market,Food,58.81
-2025-12-02,Bus / metro ticket,Transport,2.20
+2025-12-01,Coffee & croissant,Food,4.46
+2025-12-01,Trattoria Fornaciari,Food,33.86
+2025-12-02,Groceries - Amato Market,Food,31.03
 2025-12-03,Gym membership,Health,35.00
-2025-12-03,Coffee & croissant,Food,3.86
-2025-12-03,Burger place Leone,Food,11.80
+2025-12-03,Coffee & croissant,Food,3.32
+2025-12-03,Bus / metro ticket,Transport,2.20
+2025-12-04,Trattoria Tremonti,Food,24.48
 2025-12-04,Bus / metro ticket,Transport,2.20
+2025-12-04,Books - Barcella Store,Shopping,65.46
 2025-12-05,Internet - FiberNet,Bills,27.90
-2025-12-05,Sushi bar Gotti,Food,22.15
-2025-12-05,Coffee & croissant,Food,2.43
-2025-12-06,Groceries - Garozzo Market,Food,22.07
-2025-12-07,Video game,Entertainment,40.43
-2025-12-07,Pizzeria Cilea,Food,15.64
-2025-12-07,Fuel,Transport,44.46
-2025-12-08,Coffee & croissant,Food,2.52
+2025-12-05,Bus / metro ticket,Transport,2.20
+2025-12-05,Coffee & croissant,Food,3.07
+2025-12-06,Sushi bar Giovine,Food,20.22
+2025-12-06,Groceries - Cuda Market,Food,31.41
+2025-12-07,Clothes - Antonacci Store,Shopping,16.47
+2025-12-07,Taxi ride,Transport,14.68
 2025-12-08,Bus / metro ticket,Transport,2.20
+2025-12-08,Coffee & croissant,Food,3.10
+2025-12-09,Groceries - Bersani Market,Food,51.82
 2025-12-09,Bus / metro ticket,Transport,2.20
-2025-12-09,Pizzeria Verdone,Food,13.43
-2025-12-09,Coffee & croissant,Food,2.05
-2025-12-09,Groceries - Camicione Market,Food,74.86
-2025-12-10,Bus / metro ticket,Transport,2.20
+2025-12-09,Fuel,Transport,44.99
 2025-12-10,Phone plan,Bills,9.99
-2025-12-11,Coffee & croissant,Food,1.81
-2025-12-12,Coffee & croissant,Food,2.34
+2025-12-10,Pharmacy,Health,21.73
+2025-12-11,Coffee & croissant,Food,2.19
 2025-12-12,Bus / metro ticket,Transport,2.20
-2025-12-13,Groceries - Broschi Market,Food,24.38
-2025-12-13,Sushi bar Querini,Food,15.94
-2025-12-13,Museum,Entertainment,38.19
+2025-12-13,Groceries - Comeriato Market,Food,50.82
+2025-12-13,Trattoria Pace,Food,18.73
 2025-12-15,Netflix subscription,Entertainment,13.99
 2025-12-15,Bus / metro ticket,Transport,2.20
-2025-12-16,Clothes - Baggio Store,Shopping,104.84
-2025-12-16,Bus / metro ticket,Transport,2.20
-2025-12-16,Groceries - Balbi Market,Food,19.20
-2025-12-17,Coffee & croissant,Food,2.16
+2025-12-16,Groceries - Giradello Market,Food,51.47
+2025-12-16,Donation,Other,8.25
+2025-12-17,Kebab Caruso,Food,31.73
 2025-12-17,Bus / metro ticket,Transport,2.20
 2025-12-18,Bus / metro ticket,Transport,2.20
-2025-12-18,Coffee & croissant,Food,3.06
-2025-12-19,Coffee & croissant,Food,3.01
 2025-12-19,Bus / metro ticket,Transport,2.20
-2025-12-20,Electricity bill,Bills,95.58
-2025-12-20,Groceries - Cabrini Market,Food,20.88
-2025-12-21,Pizzeria Galeati,Food,13.77
-2025-12-21,Fuel,Transport,46.71
-2025-12-22,Bus / metro ticket,Transport,2.20
-2025-12-22,Gas heating bill,Bills,61.50
-2025-12-23,Groceries - Giannini Market,Food,20.86
-2025-12-23,Coffee & croissant,Food,4.28
+2025-12-20,Bowling,Entertainment,22.97
+2025-12-20,Pharmacy,Health,19.60
+2025-12-20,Electricity bill,Bills,108.61
+2025-12-20,Dry cleaning,Other,16.13
+2025-12-20,Groceries - Moretti Market,Food,70.72
+2025-12-22,Gas heating bill,Bills,60.70
 2025-12-23,Bus / metro ticket,Transport,2.20
-2025-12-23,Clothes - Tirabassi Store,Shopping,84.92
-2025-12-24,Coffee & croissant,Food,3.41
+2025-12-23,Groceries - Schiavo Market,Food,27.69
+2025-12-24,Coffee & croissant,Food,2.92
 2025-12-24,Bus / metro ticket,Transport,2.20
-2025-12-25,Coffee & croissant,Food,3.61
 2025-12-25,Bus / metro ticket,Transport,2.20
-2025-12-26,Groceries - Avogadro Market,Food,30.15
-2025-12-26,Coffee & croissant,Food,4.32
-2025-12-27,Fuel,Transport,59.51
-2025-12-27,Groceries - Zamorani Market,Food,74.27
-2025-12-29,Bus / metro ticket,Transport,2.20
-2025-12-29,Shoes - Filangieri Store,Shopping,80.81
-2025-12-30,Groceries - Verdone Market,Food,49.45
-2025-12-30,Coffee & croissant,Food,1.83
-2025-12-30,Trattoria Puccini,Food,24.82
-2025-12-31,Bus / metro ticket,Transport,2.20
+2025-12-26,Coffee & croissant,Food,3.54
+2025-12-26,Bus / metro ticket,Transport,2.20
+2025-12-27,Groceries - Nordio Market,Food,38.11
+2025-12-27,Sushi bar Liverotti,Food,28.28
+2025-12-27,Concert,Entertainment,29.11
+2025-12-28,Museum,Entertainment,42.65
+2025-12-28,Burger place Perini,Food,16.28
+2025-12-30,Groceries - Iannelli Market,Food,61.74
+2025-12-30,Coffee & croissant,Food,2.75
+2025-12-30,Bus / metro ticket,Transport,2.20
+2025-12-31,Coffee & croissant,Food,1.82
 2026-01-01,Monthly rent,Housing,450.00
-2026-01-01,Taxi ride,Transport,23.26
-2026-01-03,Groceries - Galuppi Market,Food,44.24
-2026-01-03,Cinema tickets,Entertainment,43.77
-2026-01-03,Trattoria Salandra,Food,15.46
+2026-01-01,Coffee & croissant,Food,2.85
+2026-01-02,Coffee & croissant,Food,4.37
+2026-01-02,Fuel,Transport,50.04
+2026-01-03,Concert,Entertainment,44.31
+2026-01-03,Groceries - Murialdo Market,Food,57.34
 2026-01-03,Gym membership,Health,35.00
-2026-01-05,Coffee & croissant,Food,3.77
-2026-01-05,Bus / metro ticket,Transport,2.20
+2026-01-04,Video game,Entertainment,18.48
 2026-01-05,Internet - FiberNet,Bills,27.90
-2026-01-06,Groceries - Lettiere Market,Food,18.10
+2026-01-05,Coffee & croissant,Food,2.22
+2026-01-05,Bus / metro ticket,Transport,2.20
+2026-01-06,Groceries - Germano Market,Food,39.63
+2026-01-07,Coffee & croissant,Food,2.31
 2026-01-07,Bus / metro ticket,Transport,2.20
-2026-01-07,Coffee & croissant,Food,4.09
-2026-01-08,Pharmacy,Health,12.17
+2026-01-09,Coffee & croissant,Food,3.31
 2026-01-09,Bus / metro ticket,Transport,2.20
-2026-01-10,Groceries - Alboni Market,Food,22.83
+2026-01-10,Kebab Norbiato,Food,37.52
 2026-01-10,Phone plan,Bills,9.99
-2026-01-11,Trattoria Cuomo,Food,37.53
-2026-01-12,Coffee & croissant,Food,2.20
+2026-01-10,Groceries - Foa Market,Food,57.25
+2026-01-12,Clothes - Mazzi Store,Shopping,27.39
+2026-01-12,Bus / metro ticket,Transport,2.20
+2026-01-12,Coffee & croissant,Food,2.34
+2026-01-13,Groceries - Garozzo Market,Food,45.36
 2026-01-13,Bus / metro ticket,Transport,2.20
-2026-01-13,Coffee & croissant,Food,3.30
-2026-01-13,Groceries - Raimondi Market,Food,57.67
-2026-01-14,Coffee & croissant,Food,4.00
+2026-01-13,Coffee & croissant,Food,3.20
 2026-01-14,Bus / metro ticket,Transport,2.20
+2026-01-14,Coffee & croissant,Food,3.13
+2026-01-15,Bus / metro ticket,Transport,2.20
+2026-01-15,Coffee & croissant,Food,3.26
 2026-01-15,Netflix subscription,Entertainment,13.99
-2026-01-16,Trattoria Morpurgo,Food,15.71
 2026-01-16,Bus / metro ticket,Transport,2.20
-2026-01-17,Fuel,Transport,61.42
-2026-01-17,Groceries - Lettiere Market,Food,29.79
-2026-01-17,Kebab Cremonesi,Food,36.44
-2026-01-19,Coffee & croissant,Food,3.61
-2026-01-20,Groceries - Gabrieli Market,Food,51.74
-2026-01-20,Burger place Morandini,Food,12.94
-2026-01-20,Electricity bill,Bills,94.83
+2026-01-16,Taxi ride,Transport,27.44
+2026-01-17,Groceries - Marino Market,Food,35.05
+2026-01-17,Cinema tickets,Entertainment,14.82
+2026-01-18,Groceries - Tornatore Market,Food,52.67
+2026-01-18,Bowling,Entertainment,11.02
+2026-01-19,Coffee & croissant,Food,4.20
+2026-01-19,Bus / metro ticket,Transport,2.20
+2026-01-19,Taxi ride,Transport,11.88
 2026-01-20,Bus / metro ticket,Transport,2.20
-2026-01-20,Fuel,Transport,46.37
-2026-01-21,Bus / metro ticket,Transport,2.20
-2026-01-21,Fuel,Transport,51.18
-2026-01-22,Bus / metro ticket,Transport,2.20
-2026-01-22,Fuel,Transport,39.57
-2026-01-22,Gas heating bill,Bills,69.27
-2026-01-23,Bus / metro ticket,Transport,2.20
-2026-01-24,Groceries - Camicione Market,Food,19.46
-2026-01-24,Burger place Cabibbo,Food,20.50
-2026-01-26,Coffee & croissant,Food,4.09
+2026-01-20,Groceries - Puglisi Market,Food,42.29
+2026-01-20,Electricity bill,Bills,87.46
+2026-01-21,Coffee & croissant,Food,1.82
+2026-01-22,Gas heating bill,Bills,67.35
+2026-01-22,Coffee & croissant,Food,4.17
+2026-01-22,Kebab Gianinazzi,Food,13.78
+2026-01-24,Groceries - Santoro Market,Food,51.19
+2026-01-25,Kebab Puccini,Food,12.62
 2026-01-26,Bus / metro ticket,Transport,2.20
-2026-01-27,Groceries - Parmitano Market,Food,59.83
-2026-01-28,Headphones - Oliboni Store,Shopping,31.64
-2026-01-28,Burger place Cagnin,Food,16.07
+2026-01-26,Coffee & croissant,Food,3.27
+2026-01-27,Groceries - Stein Market,Food,32.43
+2026-01-27,Burger place Bosurgi,Food,20.80
+2026-01-27,Bus / metro ticket,Transport,2.20
+2026-01-28,Groceries - Scalera Market,Food,39.26
 2026-01-28,Bus / metro ticket,Transport,2.20
 2026-01-29,Bus / metro ticket,Transport,2.20
-2026-01-29,Fuel,Transport,63.44
-2026-01-31,Groceries - Muratori Market,Food,44.98
-2026-02-01,Museum,Entertainment,18.23
+2026-01-30,Kebab Zeffirelli,Food,35.98
+2026-01-30,Bus / metro ticket,Transport,2.20
+2026-01-30,Coffee & croissant,Food,2.71
+2026-01-31,Groceries - Omma Market,Food,19.34
 2026-02-01,Monthly rent,Housing,450.00
-2026-02-02,Bus / metro ticket,Transport,2.20
-2026-02-03,Taxi ride,Transport,15.12
+2026-02-01,Trattoria Rosmini,Food,32.98
+2026-02-02,Groceries - Mengolo Market,Food,73.09
+2026-02-02,Coffee & croissant,Food,3.99
+2026-02-03,Bus / metro ticket,Transport,2.20
+2026-02-03,Groceries - Salieri Market,Food,72.39
 2026-02-03,Gym membership,Health,35.00
-2026-02-03,Groceries - Iannucci Market,Food,34.65
+2026-02-04,Coffee & croissant,Food,1.90
 2026-02-04,Bus / metro ticket,Transport,2.20
-2026-02-04,Pizzeria Battaglia,Food,20.62
-2026-02-05,Coffee & croissant,Food,3.86
 2026-02-05,Internet - FiberNet,Bills,27.90
-2026-02-06,Coffee & croissant,Food,3.48
-2026-02-07,Groceries - Sauro Market,Food,27.91
-2026-02-07,Pizzeria Valguarnera,Food,20.85
-2026-02-07,Bowling,Entertainment,34.16
+2026-02-05,Coffee & croissant,Food,3.78
+2026-02-05,Bus / metro ticket,Transport,2.20
+2026-02-06,Coffee & croissant,Food,2.50
+2026-02-07,Concert,Entertainment,32.12
+2026-02-07,Groceries - Pirelli Market,Food,38.68
+2026-02-07,Burger place Bodoni,Food,37.41
+2026-02-08,Burger place Storladi,Food,20.62
+2026-02-08,Museum,Entertainment,26.80
+2026-02-09,Fuel,Transport,48.56
+2026-02-09,Coffee & croissant,Food,1.99
 2026-02-09,Bus / metro ticket,Transport,2.20
-2026-02-09,Trattoria Cattaneo,Food,31.99
 2026-02-10,Phone plan,Bills,9.99
-2026-02-10,Pharmacy,Health,10.72
-2026-02-10,Bus / metro ticket,Transport,2.20
-2026-02-10,Coffee & croissant,Food,3.26
-2026-02-10,Groceries - Pareto Market,Food,40.94
-2026-02-11,Sushi bar Bosurgi,Food,25.71
-2026-02-12,Bus / metro ticket,Transport,2.20
-2026-02-13,Fuel,Transport,37.64
-2026-02-14,Groceries - Villarosa Market,Food,65.02
-2026-02-14,Kebab Magnani,Food,22.40
-2026-02-14,Fuel,Transport,50.55
-2026-02-15,Concert,Entertainment,19.50
-2026-02-15,Gift - Ferrabosco Store,Shopping,22.07
-2026-02-15,Burger place Opizzi,Food,12.52
+2026-02-10,Groceries - Antonini Market,Food,38.78
+2026-02-11,Coffee & croissant,Food,4.25
+2026-02-11,Groceries - Ferrata Market,Food,30.65
+2026-02-12,Coffee & croissant,Food,2.84
+2026-02-12,Pizzeria Cimarosa,Food,16.48
+2026-02-13,Fuel,Transport,49.70
+2026-02-13,Bus / metro ticket,Transport,2.20
+2026-02-14,Groceries - Udinese Market,Food,51.69
+2026-02-14,Trattoria Doria,Food,23.10
 2026-02-15,Netflix subscription,Entertainment,13.99
-2026-02-16,Coffee & croissant,Food,4.05
-2026-02-17,Groceries - Bonanno Market,Food,49.42
-2026-02-17,Coffee & croissant,Food,4.29
+2026-02-16,Coffee & croissant,Food,3.21
+2026-02-16,Bus / metro ticket,Transport,2.20
+2026-02-16,Fuel,Transport,64.42
+2026-02-17,Groceries - Antonelli Market,Food,62.40
+2026-02-17,Coffee & croissant,Food,3.24
+2026-02-17,Kebab Luciani,Food,9.13
+2026-02-17,Bus / metro ticket,Transport,2.20
+2026-02-18,Trattoria Turati,Food,34.38
 2026-02-18,Bus / metro ticket,Transport,2.20
 2026-02-19,Bus / metro ticket,Transport,2.20
-2026-02-20,Coffee & croissant,Food,3.81
-2026-02-20,Electricity bill,Bills,74.83
-2026-02-21,Groceries - Beccheria Market,Food,20.11
-2026-02-22,Trattoria Gentilini,Food,11.17
-2026-02-22,Gas heating bill,Bills,71.56
-2026-02-23,Coffee & croissant,Food,4.38
-2026-02-24,Groceries - Luxardo Market,Food,34.38
-2026-02-24,Coffee & croissant,Food,2.04
-2026-02-24,Donation,Other,24.90
-2026-02-25,Coffee & croissant,Food,2.19
+2026-02-20,Bus / metro ticket,Transport,2.20
+2026-02-20,Coffee & croissant,Food,2.55
+2026-02-20,Electricity bill,Bills,80.37
+2026-02-21,Groceries - Taliani Market,Food,74.13
+2026-02-21,Fuel,Transport,51.27
+2026-02-22,Gas heating bill,Bills,97.57
+2026-02-23,Coffee & croissant,Food,2.32
+2026-02-23,Bus / metro ticket,Transport,2.20
+2026-02-23,Headphones - Corbo Store,Shopping,26.89
+2026-02-24,Groceries - Calgari Market,Food,25.13
+2026-02-24,Coffee & croissant,Food,3.64
+2026-02-24,Pizzeria Carullo,Food,18.50
+2026-02-25,Coffee & croissant,Food,3.27
+2026-02-25,Trattoria Petralli,Food,37.23
 2026-02-25,Bus / metro ticket,Transport,2.20
+2026-02-26,Coffee & croissant,Food,3.23
 2026-02-26,Bus / metro ticket,Transport,2.20
-2026-02-26,Gift - Bottaro Store,Shopping,109.33
-2026-02-27,Coffee & croissant,Food,3.39
-2026-02-27,Bus / metro ticket,Transport,2.20
-2026-02-28,Museum,Entertainment,18.16
-2026-02-28,Groceries - Giannini Market,Food,31.52
+2026-02-27,Pizzeria Bellocchio,Food,37.39
+2026-02-28,Groceries - Borghese Market,Food,70.59
 2026-03-01,Monthly rent,Housing,450.00
+2026-03-01,Taxi ride,Transport,22.93
+2026-03-01,Pizzeria Scotti,Food,19.00
 2026-03-02,Bus / metro ticket,Transport,2.20
-2026-03-03,Bus / metro ticket,Transport,2.20
+2026-03-02,Coffee & croissant,Food,2.18
+2026-03-03,Groceries - Vittadello Market,Food,73.43
+2026-03-03,Coffee & croissant,Food,1.81
 2026-03-03,Gym membership,Health,35.00
-2026-03-03,Groceries - Callegaro Market,Food,43.13
-2026-03-04,Coffee & croissant,Food,4.27
-2026-03-04,Bus / metro ticket,Transport,2.20
+2026-03-04,Coffee & croissant,Food,3.31
 2026-03-05,Internet - FiberNet,Bills,27.90
-2026-03-06,Kebab Parmitano,Food,12.58
+2026-03-05,Groceries - Malaparte Market,Food,59.06
 2026-03-06,Bus / metro ticket,Transport,2.20
-2026-03-07,Groceries - Lettiere Market,Food,56.47
-2026-03-08,Cinema tickets,Entertainment,19.26
-2026-03-09,Coffee & croissant,Food,3.61
-2026-03-10,Groceries - Sanguineti Market,Food,45.89
-2026-03-10,Sushi bar Ossani,Food,15.30
-2026-03-10,Coffee & croissant,Food,4.37
-2026-03-10,Bus / metro ticket,Transport,2.20
+2026-03-06,Dry cleaning,Other,29.28
+2026-03-07,Groceries - Pigafetta Market,Food,49.40
+2026-03-09,Bus / metro ticket,Transport,2.20
+2026-03-10,Groceries - Tebaldi Market,Food,33.67
 2026-03-10,Phone plan,Bills,9.99
-2026-03-11,Coffee & croissant,Food,2.54
-2026-03-12,Groceries - Cuzzocrea Market,Food,37.01
+2026-03-11,Bus / metro ticket,Transport,2.20
+2026-03-11,Coffee & croissant,Food,3.68
 2026-03-12,Bus / metro ticket,Transport,2.20
 2026-03-13,Bus / metro ticket,Transport,2.20
-2026-03-14,Groceries - Paganini Market,Food,67.39
-2026-03-14,Sushi bar Norbiato,Food,31.91
-2026-03-14,Cinema tickets,Entertainment,12.69
+2026-03-14,Groceries - Giannetti Market,Food,21.97
 2026-03-15,Netflix subscription,Entertainment,13.99
-2026-03-15,Pharmacy,Health,29.96
-2026-03-15,Video game,Entertainment,19.16
-2026-03-15,Kebab Foscari,Food,12.16
-2026-03-16,Coffee & croissant,Food,3.72
-2026-03-17,Groceries - Interiano Market,Food,58.59
-2026-03-17,Coffee & croissant,Food,3.41
-2026-03-17,Bus / metro ticket,Transport,2.20
-2026-03-19,Coffee & croissant,Food,4.37
+2026-03-16,Coffee & croissant,Food,4.23
+2026-03-16,Bus / metro ticket,Transport,2.20
+2026-03-17,Groceries - Errani Market,Food,19.96
+2026-03-17,Dry cleaning,Other,7.39
+2026-03-18,Bus / metro ticket,Transport,2.20
+2026-03-18,Coffee & croissant,Food,4.41
+2026-03-19,Coffee & croissant,Food,2.32
 2026-03-19,Bus / metro ticket,Transport,2.20
-2026-03-20,Electricity bill,Bills,41.23
-2026-03-20,Coffee & croissant,Food,4.38
+2026-03-19,Pharmacy,Health,21.30
+2026-03-19,Dry cleaning,Other,27.42
+2026-03-20,Electricity bill,Bills,60.15
+2026-03-20,Coffee & croissant,Food,2.38
 2026-03-20,Bus / metro ticket,Transport,2.20
-2026-03-21,Sushi bar Donini,Food,19.20
-2026-03-21,Groceries - Bongiorno Market,Food,20.93
-2026-03-23,Stationery,Other,19.16
-2026-03-23,Coffee & croissant,Food,4.31
+2026-03-21,Groceries - Venturi Market,Food,68.87
 2026-03-23,Bus / metro ticket,Transport,2.20
-2026-03-24,Groceries - Udinese Market,Food,40.84
-2026-03-24,Coffee & croissant,Food,3.51
-2026-03-24,Kebab Gotti,Food,15.24
+2026-03-23,Pharmacy,Health,29.83
+2026-03-23,Groceries - Tartini Market,Food,23.92
+2026-03-24,Coffee & croissant,Food,2.72
 2026-03-24,Bus / metro ticket,Transport,2.20
-2026-03-25,Coffee & croissant,Food,2.23
-2026-03-25,Bus / metro ticket,Transport,2.20
-2026-03-26,Coffee & croissant,Food,2.96
+2026-03-24,Groceries - Nitto Market,Food,26.33
+2026-03-25,Fuel,Transport,55.08
+2026-03-26,Coffee & croissant,Food,4.46
 2026-03-26,Bus / metro ticket,Transport,2.20
-2026-03-27,Groceries - Dalla Market,Food,35.18
-2026-03-27,Coffee & croissant,Food,2.17
-2026-03-27,Bus / metro ticket,Transport,2.20
-2026-03-27,Fuel,Transport,57.41
-2026-03-28,Groceries - Scamarcio Market,Food,65.50
-2026-03-28,Cinema tickets,Entertainment,25.01
-2026-03-30,Burger place Parisi,Food,26.08
+2026-03-26,Fuel,Transport,38.57
+2026-03-27,Coffee & croissant,Food,2.26
+2026-03-28,Groceries - Bossi Market,Food,31.47
+2026-03-28,Burger place Gibilisco,Food,28.38
+2026-03-28,Books - Mastroianni Store,Shopping,41.44
+2026-03-29,Trattoria Matteotti,Food,12.61
+2026-03-29,Video game,Entertainment,27.68
 2026-03-30,Bus / metro ticket,Transport,2.20
-2026-03-30,Coffee & croissant,Food,2.98
-2026-03-31,Coffee & croissant,Food,3.18
+2026-03-31,Groceries - Dallara Market,Food,64.72
 2026-03-31,Bus / metro ticket,Transport,2.20
-2026-03-31,Groceries - Jilani Market,Food,47.10
+2026-04-01,Coffee & croissant,Food,4.33
 2026-04-01,Monthly rent,Housing,450.00
-2026-04-01,Bus / metro ticket,Transport,2.20
+2026-04-02,Stationery,Other,29.94
 2026-04-02,Bus / metro ticket,Transport,2.20
-2026-04-03,Gym membership,Health,35.00
-2026-04-03,Coffee & croissant,Food,1.95
 2026-04-03,Bus / metro ticket,Transport,2.20
-2026-04-04,Groceries - Volta Market,Food,66.75
+2026-04-03,Coffee & croissant,Food,2.44
+2026-04-03,Gym membership,Health,35.00
+2026-04-04,Groceries - Merisi Market,Food,31.71
+2026-04-04,Pizzeria Pederiva,Food,26.58
 2026-04-05,Internet - FiberNet,Bills,27.90
-2026-04-05,Cinema tickets,Entertainment,24.67
-2026-04-06,Bus / metro ticket,Transport,2.20
-2026-04-06,Burger place Galilei,Food,37.74
-2026-04-07,Bus / metro ticket,Transport,2.20
-2026-04-07,Coffee & croissant,Food,3.50
-2026-04-07,Groceries - Mocenigo Market,Food,56.70
-2026-04-08,Coffee & croissant,Food,2.02
+2026-04-07,Groceries - Simeoni Market,Food,28.28
+2026-04-07,Coffee & croissant,Food,3.13
+2026-04-07,Sushi bar Morandi,Food,25.70
+2026-04-08,Groceries - Rossini Market,Food,47.44
+2026-04-08,Coffee & croissant,Food,2.41
+2026-04-08,Bus / metro ticket,Transport,2.20
+2026-04-09,Coffee & croissant,Food,2.05
 2026-04-09,Bus / metro ticket,Transport,2.20
+2026-04-10,Coffee & croissant,Food,4.33
 2026-04-10,Phone plan,Bills,9.99
 2026-04-10,Bus / metro ticket,Transport,2.20
-2026-04-11,Pharmacy,Health,13.42
-2026-04-11,Sushi bar Giacconi,Food,33.49
-2026-04-11,Groceries - Bertolucci Market,Food,75.00
-2026-04-12,Trattoria Balbi,Food,14.24
-2026-04-14,Groceries - Mennea Market,Food,69.53
-2026-04-14,Coffee & croissant,Food,3.63
-2026-04-14,Bus / metro ticket,Transport,2.20
+2026-04-11,Groceries - Borgia Market,Food,26.20
+2026-04-11,Concert,Entertainment,26.09
+2026-04-12,Kebab Lanfranchi,Food,37.95
+2026-04-13,Bus / metro ticket,Transport,2.20
+2026-04-13,Coffee & croissant,Food,4.33
+2026-04-14,Groceries - Sgarbi Market,Food,29.49
 2026-04-15,Netflix subscription,Entertainment,13.99
-2026-04-15,Bus / metro ticket,Transport,2.20
-2026-04-16,Coffee & croissant,Food,2.23
+2026-04-15,Pharmacy,Health,23.70
+2026-04-16,Coffee & croissant,Food,1.83
 2026-04-16,Bus / metro ticket,Transport,2.20
-2026-04-17,Coffee & croissant,Food,2.87
+2026-04-17,Coffee & croissant,Food,2.17
 2026-04-17,Bus / metro ticket,Transport,2.20
-2026-04-18,Pizzeria Interminelli,Food,17.32
-2026-04-18,Groceries - Pietrangeli Market,Food,37.11
-2026-04-18,Museum,Entertainment,24.60
-2026-04-18,Clothes - Boezio Store,Shopping,14.05
-2026-04-19,Cinema tickets,Entertainment,9.77
+2026-04-18,Groceries - Coardi Market,Food,74.88
+2026-04-20,Electricity bill,Bills,63.21
+2026-04-20,Groceries - Carpaccio Market,Food,18.23
+2026-04-20,Coffee & croissant,Food,2.36
 2026-04-20,Bus / metro ticket,Transport,2.20
-2026-04-20,Electricity bill,Bills,44.93
-2026-04-21,Groceries - Franceschi Market,Food,31.71
-2026-04-21,Coffee & croissant,Food,3.59
-2026-04-21,Sushi bar Zola,Food,10.96
+2026-04-21,Coffee & croissant,Food,2.34
 2026-04-21,Bus / metro ticket,Transport,2.20
+2026-04-21,Groceries - Surian Market,Food,23.66
+2026-04-22,Coffee & croissant,Food,4.38
 2026-04-22,Bus / metro ticket,Transport,2.20
-2026-04-23,Coffee & croissant,Food,1.92
-2026-04-24,Coffee & croissant,Food,3.90
+2026-04-22,Books - Pellico Store,Shopping,102.42
+2026-04-23,Coffee & croissant,Food,4.09
+2026-04-24,Coffee & croissant,Food,3.69
 2026-04-24,Bus / metro ticket,Transport,2.20
-2026-04-24,Fuel,Transport,40.98
-2026-04-25,Trattoria Frescobaldi,Food,17.30
-2026-04-25,Groceries - Medici Market,Food,48.95
-2026-04-26,Burger place Tarchetti,Food,18.83
-2026-04-27,Coffee & croissant,Food,4.49
-2026-04-27,Bus / metro ticket,Transport,2.20
-2026-04-28,Groceries - Petrassi Market,Food,27.50
-2026-04-28,Coffee & croissant,Food,3.01
-2026-04-29,Coffee & croissant,Food,3.19
-2026-04-29,Bus / metro ticket,Transport,2.20
-2026-04-29,Fuel,Transport,60.46
-2026-04-30,Coffee & croissant,Food,4.36
-2026-04-30,Trattoria Sauli,Food,28.69
-2026-05-01,Coffee & croissant,Food,3.79
+2026-04-25,Sushi bar Anguissola,Food,15.88
+2026-04-25,Groceries - Paoletti Market,Food,49.38
+2026-04-26,Haircut,Other,10.31
+2026-04-26,Groceries - Guinizzelli Market,Food,46.99
+2026-04-26,Kebab Cabibbo,Food,23.64
+2026-04-28,Groceries - Luna Market,Food,34.21
+2026-04-28,Coffee & croissant,Food,3.32
+2026-04-29,Coffee & croissant,Food,2.86
+2026-04-30,Coffee & croissant,Food,4.40
+2026-04-30,Bus / metro ticket,Transport,2.20
 2026-05-01,Monthly rent,Housing,450.00
 2026-05-01,Bus / metro ticket,Transport,2.20
-2026-05-02,Groceries - Cocci Market,Food,34.28
+2026-05-01,Coffee & croissant,Food,2.60
+2026-05-02,Groceries - Boccherini Market,Food,47.14
+2026-05-03,Kebab Basadonna,Food,23.60
 2026-05-03,Gym membership,Health,35.00
 2026-05-04,Bus / metro ticket,Transport,2.20
-2026-05-05,Coffee & croissant,Food,3.30
-2026-05-05,Groceries - Iannuzzi Market,Food,63.05
+2026-05-05,Coffee & croissant,Food,3.68
 2026-05-05,Internet - FiberNet,Bills,27.90
-2026-05-06,Coffee & croissant,Food,3.88
+2026-05-05,Groceries - Salieri Market,Food,57.97
+2026-05-05,Bus / metro ticket,Transport,2.20
 2026-05-06,Bus / metro ticket,Transport,2.20
 2026-05-07,Bus / metro ticket,Transport,2.20
-2026-05-08,Coffee & croissant,Food,2.67
 2026-05-08,Bus / metro ticket,Transport,2.20
-2026-05-09,Sushi bar Gradenigo,Food,26.82
-2026-05-09,Groceries - Cilea Market,Food,49.40
-2026-05-10,Kebab Zamorani,Food,10.19
+2026-05-09,Groceries - Bianchi Market,Food,63.81
+2026-05-09,Pizzeria Gualtieri,Food,36.75
 2026-05-10,Phone plan,Bills,9.99
-2026-05-11,Kebab Vasari,Food,17.40
-2026-05-12,Groceries - Iadanza Market,Food,21.42
-2026-05-12,Coffee & croissant,Food,3.11
-2026-05-12,Bus / metro ticket,Transport,2.20
-2026-05-13,Coffee & croissant,Food,3.32
+2026-05-10,Museum,Entertainment,25.23
+2026-05-11,Coffee & croissant,Food,3.32
+2026-05-11,Bus / metro ticket,Transport,2.20
+2026-05-11,Fuel,Transport,60.92
+2026-05-12,Groceries - Cugia Market,Food,43.64
 2026-05-13,Bus / metro ticket,Transport,2.20
-2026-05-14,Coffee & croissant,Food,4.14
 2026-05-14,Bus / metro ticket,Transport,2.20
+2026-05-15,Coffee & croissant,Food,2.42
 2026-05-15,Netflix subscription,Entertainment,13.99
-2026-05-15,Bus / metro ticket,Transport,2.20
-2026-05-15,Coffee & croissant,Food,1.86
-2026-05-16,Groceries - Renzi Market,Food,68.29
-2026-05-17,Burger place Piane,Food,10.48
-2026-05-17,Museum,Entertainment,26.66
-2026-05-18,Coffee & croissant,Food,4.43
-2026-05-19,Groceries - Orengo Market,Food,46.50
-2026-05-19,Coffee & croissant,Food,2.17
+2026-05-16,Groceries - Tartaglia Market,Food,24.40
+2026-05-17,Groceries - Zetticci Market,Food,41.26
+2026-05-17,Sushi bar Sollima,Food,32.00
+2026-05-17,Taxi ride,Transport,16.15
+2026-05-18,Books - Battaglia Store,Shopping,38.08
+2026-05-18,Groceries - Tarantini Market,Food,73.50
+2026-05-18,Coffee & croissant,Food,4.05
 2026-05-19,Bus / metro ticket,Transport,2.20
-2026-05-20,Electricity bill,Bills,56.24
+2026-05-19,Groceries - Tartini Market,Food,18.92
+2026-05-20,Electricity bill,Bills,58.55
 2026-05-20,Bus / metro ticket,Transport,2.20
-2026-05-21,Coffee & croissant,Food,3.62
+2026-05-20,Coffee & croissant,Food,3.08
 2026-05-21,Bus / metro ticket,Transport,2.20
-2026-05-21,Pharmacy,Health,16.86
-2026-05-23,Groceries - Galilei Market,Food,26.42
-2026-05-23,Fuel,Transport,63.45
-2026-05-23,Bowling,Entertainment,23.49
+2026-05-21,Phone case - Bixio Store,Shopping,118.48
+2026-05-22,Coffee & croissant,Food,2.56
+2026-05-23,Groceries - Sgarbi Market,Food,54.88
+2026-05-23,Trattoria Bragadin,Food,18.08
+2026-05-24,Video game,Entertainment,22.07
+2026-05-25,Coffee & croissant,Food,3.62
 2026-05-25,Bus / metro ticket,Transport,2.20
-2026-05-25,Coffee & croissant,Food,4.38
-2026-05-26,Coffee & croissant,Food,4.38
-2026-05-26,Bus / metro ticket,Transport,2.20
-2026-05-26,Groceries - Cicilia Market,Food,33.07
-2026-05-27,Coffee & croissant,Food,3.31
+2026-05-26,Groceries - Scamarcio Market,Food,20.49
+2026-05-27,Bus / metro ticket,Transport,2.20
+2026-05-28,Coffee & croissant,Food,2.37
 2026-05-28,Bus / metro ticket,Transport,2.20
+2026-05-29,Coffee & croissant,Food,2.70
 2026-05-29,Bus / metro ticket,Transport,2.20
-2026-05-30,Groceries - Tommaseo Market,Food,69.60
-2026-05-30,Trattoria Taccola,Food,10.52
-2026-05-30,Concert,Entertainment,8.19
+2026-05-30,Groceries - Giannelli Market,Food,61.07
+2026-05-30,Kebab Salandra,Food,31.82
+2026-05-30,Cinema tickets,Entertainment,14.23
+2026-05-30,Books - Guarana Store,Shopping,109.35
+2026-05-31,Kebab Brenna,Food,33.59
+2026-06-01,Burger place Almagià,Food,30.83
 2026-06-01,Monthly rent,Housing,450.00
-2026-06-01,Coffee & croissant,Food,3.75
-2026-06-02,Taxi ride,Transport,20.22
-2026-06-02,Coffee & croissant,Food,4.33
-2026-06-02,Groceries - Burcardo Market,Food,40.63
-2026-06-03,Coffee & croissant,Food,3.13
+2026-06-01,Coffee & croissant,Food,2.12
+2026-06-02,Pharmacy,Health,7.27
+2026-06-02,Bus / metro ticket,Transport,2.20
+2026-06-02,Groceries - Bertoni Market,Food,34.51
+2026-06-03,Coffee & croissant,Food,2.77
 2026-06-03,Gym membership,Health,35.00
-2026-06-04,Coffee & croissant,Food,3.79
+2026-06-04,Coffee & croissant,Food,4.38
+2026-06-04,Burger place Montecchi,Food,13.78
 2026-06-04,Bus / metro ticket,Transport,2.20
+2026-06-04,Donation,Other,15.67
+2026-06-05,Trattoria Parisi,Food,17.47
 2026-06-05,Internet - FiberNet,Bills,27.90
-2026-06-05,Coffee & croissant,Food,3.61
-2026-06-05,Bus / metro ticket,Transport,2.20
-2026-06-06,Cinema tickets,Entertainment,25.22
-2026-06-06,Groceries - Bellini Market,Food,72.38
-2026-06-06,Kebab Capecchi,Food,9.33
-2026-06-08,Coffee & croissant,Food,4.47
-2026-06-09,Groceries - Correr Market,Food,56.78
+2026-06-06,Museum,Entertainment,21.17
+2026-06-06,Groceries - Ritacca Market,Food,25.98
+2026-06-06,Pizzeria Napolitano,Food,29.07
+2026-06-06,Fuel,Transport,61.51
+2026-06-08,Bus / metro ticket,Transport,2.20
+2026-06-08,Coffee & croissant,Food,2.16
+2026-06-09,Coffee & croissant,Food,2.00
+2026-06-09,Groceries - Bertolucci Market,Food,34.66
 2026-06-09,Bus / metro ticket,Transport,2.20
 2026-06-10,Phone plan,Bills,9.99
-2026-06-10,Coffee & croissant,Food,3.25
-2026-06-11,Coffee & croissant,Food,2.16
-2026-06-11,Bus / metro ticket,Transport,2.20
-2026-06-11,Pharmacy,Health,11.36
-2026-06-11,Stationery,Other,19.46
-2026-06-12,Groceries - Curatoli Market,Food,37.64
+2026-06-11,Coffee & croissant,Food,3.74
+2026-06-11,Taxi ride,Transport,25.08
+2026-06-12,Coffee & croissant,Food,1.86
 2026-06-12,Bus / metro ticket,Transport,2.20
-2026-06-12,Coffee & croissant,Food,4.48
-2026-06-13,Groceries - Querini Market,Food,73.76
+2026-06-13,Groceries - Marazzi Market,Food,27.09
+2026-06-13,Trattoria Rusticucci,Food,24.35
+2026-06-14,Bowling,Entertainment,42.62
 2026-06-15,Netflix subscription,Entertainment,13.99
-2026-06-15,Coffee & croissant,Food,1.81
-2026-06-15,Sushi bar Boccaccio,Food,22.43
-2026-06-16,Groceries - Pavanello Market,Food,28.74
-2026-06-16,Bus / metro ticket,Transport,2.20
-2026-06-17,Groceries - Paruta Market,Food,51.85
-2026-06-17,Coffee & croissant,Food,3.61
-2026-06-17,Bus / metro ticket,Transport,2.20
-2026-06-17,Fuel,Transport,48.17
-2026-06-18,Coffee & croissant,Food,4.27
-2026-06-18,Bus / metro ticket,Transport,2.20
+2026-06-15,Coffee & croissant,Food,3.00
+2026-06-15,Burger place Mazzacurati,Food,31.42
+2026-06-15,Bus / metro ticket,Transport,2.20
+2026-06-16,Groceries - Vespucci Market,Food,70.56
+2026-06-17,Taxi ride,Transport,18.43
+2026-06-19,Coffee & croissant,Food,1.98
 2026-06-19,Bus / metro ticket,Transport,2.20
-2026-06-19,Coffee & croissant,Food,2.54
-2026-06-20,Electricity bill,Bills,42.24
-2026-06-20,Groceries - Scialpi Market,Food,37.63
-2026-06-21,Trattoria Trupiano,Food,17.72
-2026-06-22,Coffee & croissant,Food,2.35
-2026-06-23,Groceries - Gregorio Market,Food,56.40
-2026-06-23,Bus / metro ticket,Transport,2.20
-2026-06-24,Trattoria Visconti,Food,36.90
+2026-06-19,Pharmacy,Health,11.68
+2026-06-20,Sushi bar Ricciardi,Food,37.46
+2026-06-20,Electricity bill,Bills,45.94
+2026-06-20,Groceries - Bajamonti Market,Food,29.26
+2026-06-21,Concert,Entertainment,16.55
+2026-06-22,Coffee & croissant,Food,3.14
+2026-06-22,Bus / metro ticket,Transport,2.20
+2026-06-23,Groceries - Pavanello Market,Food,62.45
+2026-06-23,Coffee & croissant,Food,1.81
 2026-06-24,Bus / metro ticket,Transport,2.20
-2026-06-25,Bus / metro ticket,Transport,2.20
-2026-06-27,Groceries - Amato Market,Food,26.32
-2026-06-27,Kebab Carocci,Food,25.80
-2026-06-29,Pharmacy,Health,26.17
-2026-06-29,Coffee & croissant,Food,3.74
-2026-06-30,Groceries - Valier Market,Food,56.09
-2026-06-30,Books - Interiano Store,Shopping,61.25
+2026-06-24,Coffee & croissant,Food,4.04
+2026-06-25,Coffee & croissant,Food,2.35
+2026-06-25,Taxi ride,Transport,11.20
+2026-06-26,Coffee & croissant,Food,3.68
+2026-06-26,Bus / metro ticket,Transport,2.20
+2026-06-27,Groceries - Anguillara Market,Food,36.28
+2026-06-27,Kebab Natta,Food,20.63
+2026-06-29,Coffee & croissant,Food,1.88
+2026-06-29,Bus / metro ticket,Transport,2.20
+2026-06-30,Groceries - Pedroni Market,Food,44.40
+2026-06-30,Coffee & croissant,Food,3.17
+2026-06-30,Bus / metro ticket,Transport,2.20
+2026-07-01,Gift - Acerbi Store,Shopping,53.31
+2026-07-01,Coffee & croissant,Food,1.93
+2026-07-01,Groceries - Travaglia Market,Food,53.04
 2026-07-01,Monthly rent,Housing,450.00
-2026-07-01,Kebab Morpurgo,Food,25.00
-2026-07-01,Bus / metro ticket,Transport,2.20
-2026-07-01,Pharmacy,Health,25.33
-2026-07-02,Bus / metro ticket,Transport,2.20
-2026-07-02,Pizzeria Caracciolo,Food,24.21
 2026-07-03,Gym membership,Health,35.00
 2026-07-03,Bus / metro ticket,Transport,2.20
-2026-07-03,Coffee & croissant,Food,2.46
-2026-07-04,Fuel,Transport,40.14
-2026-07-04,Burger place Rizzoli,Food,10.63
-2026-07-04,Groceries - Magrassi Market,Food,41.10
-2026-07-05,Fuel,Transport,41.34
+2026-07-03,Coffee & croissant,Food,2.94
+2026-07-04,Kebab Gregorio,Food,14.10
+2026-07-04,Groceries - Colletti Market,Food,67.09
+2026-07-05,Burger place Gravina,Food,26.34
+2026-07-05,Fuel,Transport,63.66
 2026-07-05,Internet - FiberNet,Bills,27.90
+2026-07-06,Coffee & croissant,Food,3.58
 2026-07-06,Bus / metro ticket,Transport,2.20
-2026-07-07,Coffee & croissant,Food,2.01
+2026-07-07,Groceries - Tarantino Market,Food,49.78
+2026-07-07,Kebab Toscani,Food,27.63
 2026-07-07,Bus / metro ticket,Transport,2.20
-2026-07-07,Groceries - Cuda Market,Food,58.62
-2026-07-08,Bus / metro ticket,Transport,2.20
-2026-07-09,Fuel,Transport,43.20
+2026-07-08,Coffee & croissant,Food,3.51
+2026-07-09,Bus / metro ticket,Transport,2.20
+2026-07-09,Pharmacy,Health,23.92
+2026-07-09,Taxi ride,Transport,14.63
+2026-07-10,Coffee & croissant,Food,3.60
 2026-07-10,Phone plan,Bills,9.99
-2026-07-10,Bus / metro ticket,Transport,2.20
-2026-07-11,Groceries - Sansoni Market,Food,58.57
-2026-07-11,Cinema tickets,Entertainment,42.89
-2026-07-12,Kebab Adinolfi,Food,25.09
-2026-07-12,Taxi ride,Transport,16.37
-2026-07-12,Video game,Entertainment,37.02
-2026-07-12,Pharmacy,Health,15.35
-2026-07-13,Bus / metro ticket,Transport,2.20
-2026-07-14,Coffee & croissant,Food,2.55
-2026-07-14,Groceries - Iannelli Market,Food,26.32
+2026-07-11,Groceries - Montalti Market,Food,71.21
+2026-07-12,Cinema tickets,Entertainment,24.57
+2026-07-13,Coffee & croissant,Food,2.53
+2026-07-14,Groceries - Modiano Market,Food,45.83
+2026-07-14,Clothes - Gori Store,Shopping,85.43
+2026-07-14,Bus / metro ticket,Transport,2.20
+2026-07-14,Coffee & croissant,Food,1.91
+2026-07-15,Bus / metro ticket,Transport,2.20
 2026-07-15,Netflix subscription,Entertainment,13.99
-2026-07-15,Coffee & croissant,Food,1.82
+2026-07-16,Coffee & croissant,Food,2.60
 2026-07-16,Bus / metro ticket,Transport,2.20
-2026-07-18,Groceries - Tasca Market,Food,29.39
-2026-07-18,Museum,Entertainment,42.89
-2026-07-19,Groceries - Emo Market,Food,66.32
-2026-07-20,Coffee & croissant,Food,3.41
+2026-07-17,Coffee & croissant,Food,4.23
+2026-07-18,Groceries - Medici Market,Food,24.50
+2026-07-18,Sushi bar Stucchi,Food,13.55
+2026-07-18,Fuel,Transport,44.50
+2026-07-19,Video game,Entertainment,43.91
 2026-07-20,Bus / metro ticket,Transport,2.20
-2026-07-20,Pharmacy,Health,29.21
-2026-07-20,Electricity bill,Bills,63.35
-2026-07-21,Groceries - Tomaselli Market,Food,64.30
-2026-07-21,Bus / metro ticket,Transport,2.20
-2026-07-22,Bus / metro ticket,Transport,2.20
-2026-07-23,Bus / metro ticket,Transport,2.20
-2026-07-24,Bus / metro ticket,Transport,2.20
-2026-07-24,Coffee & croissant,Food,4.29
-2026-07-24,Trattoria Canali,Food,19.10
-2026-07-25,Pizzeria Tomaselli,Food,32.50
-2026-07-25,Groceries - Mancini Market,Food,43.79
-2026-07-26,Trattoria Filangieri,Food,18.60
+2026-07-20,Electricity bill,Bills,54.99
+2026-07-21,Groceries - Metella Market,Food,57.43
+2026-07-21,Coffee & croissant,Food,2.01
+2026-07-21,Gift - Acerbi Store,Shopping,113.71
+2026-07-22,Fuel,Transport,39.76
+2026-07-23,Coffee & croissant,Food,3.21
+2026-07-25,Groceries - Norbiato Market,Food,40.07
+2026-07-26,Trattoria Gatto,Food,30.00
 2026-07-27,Bus / metro ticket,Transport,2.20
-2026-07-27,Taxi ride,Transport,13.87
-2026-07-28,Groceries - Correr Market,Food,50.91
 2026-07-28,Bus / metro ticket,Transport,2.20
-2026-07-29,Coffee & croissant,Food,2.86
-2026-07-29,Sushi bar Paltrinieri,Food,33.52
+2026-07-28,Coffee & croissant,Food,1.89
+2026-07-28,Groceries - Morpurgo Market,Food,74.72
 2026-07-29,Bus / metro ticket,Transport,2.20
+2026-07-29,Fuel,Transport,53.82
+2026-07-30,Coffee & croissant,Food,2.11
 2026-07-30,Bus / metro ticket,Transport,2.20
-2026-07-30,Coffee & croissant,Food,2.62
 2026-08-01,Monthly rent,Housing,450.00
-2026-08-01,Groceries - Cusano Market,Food,38.47
-2026-08-01,Trattoria Vattimo,Food,14.66
-2026-08-02,Video game,Entertainment,18.68
-2026-08-02,Kebab Turchetta,Food,9.89
-2026-08-03,Bus / metro ticket,Transport,2.20
-2026-08-03,Coffee & croissant,Food,3.35
+2026-08-01,Groceries - Biagiotti Market,Food,49.48
 2026-08-03,Gym membership,Health,35.00
-2026-08-04,Coffee & croissant,Food,3.79
-2026-08-04,Groceries - Abate Market,Food,30.46
+2026-08-03,Bus / metro ticket,Transport,2.20
+2026-08-03,Kebab Doria,Food,11.52
+2026-08-04,Coffee & croissant,Food,3.52
+2026-08-04,Groceries - Togliatti Market,Food,45.62
 2026-08-04,Bus / metro ticket,Transport,2.20
-2026-08-05,Coffee & croissant,Food,3.99
+2026-08-05,Bus / metro ticket,Transport,2.20
 2026-08-05,Internet - FiberNet,Bills,27.90
-2026-08-06,Bus / metro ticket,Transport,2.20
-2026-08-08,Groceries - Moccia Market,Food,33.81
-2026-08-08,Bowling,Entertainment,38.65
-2026-08-09,Burger place Staglieno,Food,19.88
-2026-08-10,Coffee & croissant,Food,3.12
+2026-08-06,Coffee & croissant,Food,3.22
+2026-08-07,Coffee & croissant,Food,3.03
+2026-08-07,Pizzeria Cannizzaro,Food,14.88
+2026-08-08,Bowling,Entertainment,12.90
+2026-08-08,Groceries - Piane Market,Food,32.87
+2026-08-10,Pharmacy,Health,21.42
+2026-08-10,Coffee & croissant,Food,2.82
+2026-08-10,Groceries - Monteverdi Market,Food,18.55
 2026-08-10,Phone plan,Bills,9.99
-2026-08-11,Groceries - Antonioni Market,Food,66.46
-2026-08-12,Stationery,Other,16.03
-2026-08-13,Groceries - Cardano Market,Food,72.61
-2026-08-13,Coffee & croissant,Food,3.66
-2026-08-13,Bus / metro ticket,Transport,2.20
+2026-08-11,Groceries - Cerquiglini Market,Food,67.16
+2026-08-11,Coffee & croissant,Food,3.73
+2026-08-11,Bus / metro ticket,Transport,2.20
+2026-08-12,Coffee & croissant,Food,3.10
+2026-08-12,Bus / metro ticket,Transport,2.20
+2026-08-13,Coffee & croissant,Food,3.37
 2026-08-14,Bus / metro ticket,Transport,2.20
+2026-08-14,Coffee & croissant,Food,2.84
+2026-08-15,Groceries - Morabito Market,Food,18.71
+2026-08-15,Burger place Caironi,Food,11.13
+2026-08-15,Video game,Entertainment,30.50
 2026-08-15,Netflix subscription,Entertainment,13.99
-2026-08-15,Groceries - Orsini Market,Food,18.06
-2026-08-15,Phone case - Martucci Store,Shopping,49.11
+2026-08-16,Kebab Mengolo,Food,15.83
+2026-08-17,Burger place Munari,Food,26.95
 2026-08-17,Bus / metro ticket,Transport,2.20
-2026-08-18,Coffee & croissant,Food,3.82
+2026-08-18,Coffee & croissant,Food,4.29
+2026-08-18,Groceries - Satta Market,Food,51.89
 2026-08-18,Bus / metro ticket,Transport,2.20
-2026-08-18,Groceries - Giradello Market,Food,38.02
-2026-08-19,Coffee & croissant,Food,2.96
+2026-08-19,Coffee & croissant,Food,3.12
 2026-08-19,Bus / metro ticket,Transport,2.20
-2026-08-20,Electricity bill,Bills,41.34
-2026-08-20,Coffee & croissant,Food,4.09
+2026-08-20,Electricity bill,Bills,64.63
+2026-08-20,Coffee & croissant,Food,2.30
+2026-08-20,Sushi bar Versace,Food,13.60
 2026-08-20,Bus / metro ticket,Transport,2.20
-2026-08-21,Coffee & croissant,Food,2.84
+2026-08-21,Coffee & croissant,Food,2.96
 2026-08-21,Bus / metro ticket,Transport,2.20
-2026-08-21,Headphones - Bevilacqua Store,Shopping,112.86
-2026-08-22,Groceries - Giusti Market,Food,50.40
-2026-08-22,Trattoria Zola,Food,31.12
-2026-08-22,Cinema tickets,Entertainment,8.51
-2026-08-23,Kebab Bosurgi,Food,31.25
+2026-08-22,Groceries - Sorrentino Market,Food,53.38
+2026-08-22,Sushi bar Cassarà,Food,11.13
+2026-08-22,Video game,Entertainment,30.64
+2026-08-23,Taxi ride,Transport,21.99
+2026-08-23,Concert,Entertainment,36.04
 2026-08-24,Bus / metro ticket,Transport,2.20
-2026-08-24,Groceries - Briccialdi Market,Food,70.49
-2026-08-25,Bus / metro ticket,Transport,2.20
-2026-08-25,Groceries - Speri Market,Food,42.94
-2026-08-26,Coffee & croissant,Food,1.83
+2026-08-24,Coffee & croissant,Food,2.23
+2026-08-25,Groceries - Pertile Market,Food,23.82
 2026-08-26,Bus / metro ticket,Transport,2.20
-2026-08-28,Bus / metro ticket,Transport,2.20
-2026-08-29,Groceries - Bompiani Market,Food,62.08
-2026-08-29,Clothes - Tutino Store,Shopping,38.41
+2026-08-27,Coffee & croissant,Food,2.13
+2026-08-27,Bus / metro ticket,Transport,2.20
+2026-08-28,Coffee & croissant,Food,3.75
+2026-08-29,Groceries - Agostinelli Market,Food,18.09
+2026-08-29,Pizzeria Callegari,Food,22.10
 2026-08-31,Bus / metro ticket,Transport,2.20
+2026-09-01,Sushi bar Scamarcio,Food,17.45
+2026-09-01,Coffee & croissant,Food,3.15
+2026-09-01,Groceries - Cremonesi Market,Food,55.71
 2026-09-01,Monthly rent,Housing,450.00
-2026-09-01,Groceries - Cavanna Market,Food,72.38
-2026-09-01,Coffee & croissant,Food,3.06
-2026-09-01,Shoes - Ceri Store,Shopping,43.49
-2026-09-02,Coffee & croissant,Food,4.42
-2026-09-03,Bus / metro ticket,Transport,2.20
-2026-09-03,Groceries - Siffredi Market,Food,48.87
+2026-09-02,Coffee & croissant,Food,3.62
+2026-09-02,Sushi bar Curatoli,Food,26.74
+2026-09-02,Bus / metro ticket,Transport,2.20
 2026-09-03,Gym membership,Health,35.00
-2026-09-05,Groceries - Vianello Market,Food,66.19
-2026-09-05,Sushi bar Deledda,Food,22.30
+2026-09-04,Coffee & croissant,Food,4.22
+2026-09-04,Bus / metro ticket,Transport,2.20
+2026-09-05,Bowling,Entertainment,31.89
 2026-09-05,Internet - FiberNet,Bills,27.90
-2026-09-06,Groceries - Iannuzzi Market,Food,55.76
-2026-09-06,Sushi bar Tron,Food,16.57
-2026-09-07,Groceries - Ramazzotti Market,Food,29.55
+2026-09-05,Groceries - Ferrazzi Market,Food,27.49
+2026-09-06,Fuel,Transport,35.46
+2026-09-06,Trattoria Vercelloni,Food,14.73
+2026-09-07,Taxi ride,Transport,11.98
 2026-09-07,Bus / metro ticket,Transport,2.20
-2026-09-08,Bus / metro ticket,Transport,2.20
-2026-09-08,Trattoria Vattimo,Food,32.42
-2026-09-08,Groceries - Franscini Market,Food,29.84
-2026-09-08,Coffee & croissant,Food,2.52
+2026-09-08,Groceries - Vidoni Market,Food,22.25
+2026-09-09,Coffee & croissant,Food,3.33
 2026-09-09,Bus / metro ticket,Transport,2.20
 2026-09-10,Phone plan,Bills,9.99
-2026-09-10,Pizzeria Filzi,Food,32.31
 2026-09-10,Bus / metro ticket,Transport,2.20
-2026-09-10,Fuel,Transport,59.91
-2026-09-11,Taxi ride,Transport,11.16
-2026-09-11,Bus / metro ticket,Transport,2.20
-2026-09-12,Groceries - Mazzacurati Market,Food,69.59
-2026-09-13,Burger place Piane,Food,14.01
-2026-09-13,Concert,Entertainment,9.28
+2026-09-11,Coffee & croissant,Food,2.83
+2026-09-12,Groceries - Milanesi Market,Food,48.79
+2026-09-12,Cinema tickets,Entertainment,28.11
+2026-09-13,Pizzeria Pacillo,Food,10.72
 2026-09-14,Bus / metro ticket,Transport,2.20
-2026-09-14,Sushi bar Palombi,Food,20.11
-2026-09-15,Groceries - Roncalli Market,Food,19.11
-2026-09-15,Stationery,Other,5.73
-2026-09-15,Coffee & croissant,Food,3.73
+2026-09-14,Coffee & croissant,Food,2.40
+2026-09-15,Groceries - Pisacane Market,Food,27.99
 2026-09-15,Netflix subscription,Entertainment,13.99
-2026-09-16,Coffee & croissant,Food,3.98
+2026-09-16,Coffee & croissant,Food,3.83
 2026-09-16,Bus / metro ticket,Transport,2.20
-2026-09-18,Coffee & croissant,Food,2.44
-2026-09-19,Groceries - Trapanese Market,Food,26.10
-2026-09-20,Stationery,Other,24.36
-2026-09-20,Electricity bill,Bills,64.54
-2026-09-20,Concert,Entertainment,41.99
-2026-09-20,Groceries - Salvini Market,Food,52.29
-2026-09-20,Burger place Casini,Food,9.02
+2026-09-17,Coffee & croissant,Food,3.36
+2026-09-17,Burger place Giannotti,Food,29.82
+2026-09-17,Bus / metro ticket,Transport,2.20
+2026-09-18,Coffee & croissant,Food,2.46
+2026-09-19,Groceries - Volta Market,Food,52.84
+2026-09-20,Kebab Trebbi,Food,32.38
+2026-09-20,Electricity bill,Bills,52.55
 2026-09-21,Bus / metro ticket,Transport,2.20
-2026-09-22,Groceries - Granatelli Market,Food,26.98
-2026-09-23,Coffee & croissant,Food,3.39
-2026-09-23,Bus / metro ticket,Transport,2.20
+2026-09-22,Groceries - Carullo Market,Food,70.83
+2026-09-22,Coffee & croissant,Food,2.88
+2026-09-22,Bus / metro ticket,Transport,2.20
+2026-09-23,Coffee & croissant,Food,2.21
+2026-09-23,Fuel,Transport,41.17
+2026-09-23,Haircut,Other,19.85
+2026-09-24,Coffee & croissant,Food,3.01
+2026-09-24,Burger place Turati,Food,18.26
 2026-09-24,Bus / metro ticket,Transport,2.20
-2026-09-25,Coffee & croissant,Food,3.81
-2026-09-26,Groceries - Gasperi Market,Food,68.54
-2026-09-26,Sushi bar Boccherini,Food,15.08
-2026-09-27,Burger place Moretti,Food,23.30
-2026-09-27,Museum,Entertainment,37.18
-2026-09-28,Pizzeria Argentero,Food,18.24
-2026-09-29,Groceries - Visintini Market,Food,69.19
-2026-09-29,Coffee & croissant,Food,3.40
+2026-09-25,Coffee & croissant,Food,1.87
+2026-09-25,Bus / metro ticket,Transport,2.20
+2026-09-25,Shoes - Schiavone Store,Shopping,65.89
+2026-09-25,Donation,Other,23.24
+2026-09-26,Groceries - Crisafulli Market,Food,51.98
+2026-09-27,Fuel,Transport,61.25
+2026-09-28,Sushi bar Morgagni,Food,12.16
+2026-09-28,Bus / metro ticket,Transport,2.20
+2026-09-29,Groceries - Savorgnan Market,Food,18.95
+2026-09-29,Coffee & croissant,Food,3.31
 2026-09-29,Bus / metro ticket,Transport,2.20
-2026-09-29,Fuel,Transport,63.27
-2026-09-30,Coffee & croissant,Food,3.68
+2026-09-30,Bus / metro ticket,Transport,2.20
 2026-10-01,Monthly rent,Housing,450.00
-2026-10-01,Coffee & croissant,Food,2.95
-2026-10-01,Bus / metro ticket,Transport,2.20
-2026-10-01,Shoes - Giammusso Store,Shopping,80.92
+2026-10-01,Coffee & croissant,Food,3.10
+2026-10-01,Headphones - Zito Store,Shopping,76.97
+2026-10-02,Taxi ride,Transport,15.24
+2026-10-02,Bus / metro ticket,Transport,2.20
+2026-10-02,Coffee & croissant,Food,2.37
+2026-10-02,Groceries - Pizzamano Market,Food,31.27
+2026-10-03,Pizzeria Lanfranchi,Food,22.42
+2026-10-03,Groceries - Bacosi Market,Food,27.35
 2026-10-03,Gym membership,Health,35.00
-2026-10-03,Cinema tickets,Entertainment,11.17
-2026-10-03,Groceries - Galuppi Market,Food,28.64
-2026-10-03,Burger place Aldobrandi,Food,22.49
+2026-10-04,Burger place Morellato,Food,26.45
+2026-10-05,Fuel,Transport,63.22
 2026-10-05,Internet - FiberNet,Bills,27.90
-2026-10-05,Coffee & croissant,Food,2.01
-2026-10-06,Groceries - Bondumier Market,Food,24.86
-2026-10-08,Coffee & croissant,Food,2.55
-2026-10-10,Museum,Entertainment,13.32
+2026-10-06,Bus / metro ticket,Transport,2.20
+2026-10-06,Groceries - Cesarotti Market,Food,59.21
+2026-10-06,Coffee & croissant,Food,3.64
+2026-10-07,Coffee & croissant,Food,3.41
+2026-10-08,Coffee & croissant,Food,2.73
+2026-10-08,Bus / metro ticket,Transport,2.20
 2026-10-10,Phone plan,Bills,9.99
-2026-10-10,Burger place Germano,Food,27.99
-2026-10-10,Groceries - Biagiotti Market,Food,37.60
-2026-10-11,Trattoria Boito,Food,10.43
-2026-10-13,Groceries - Bajardi Market,Food,59.54
-2026-10-13,Burger place Montalcini,Food,15.13
-2026-10-14,Coffee & croissant,Food,3.17
-2026-10-14,Taxi ride,Transport,13.47
+2026-10-10,Groceries - Leblanc Market,Food,45.74
+2026-10-10,Video game,Entertainment,15.75
+2026-10-11,Burger place Novaro,Food,37.34
+2026-10-11,Video game,Entertainment,41.06
+2026-10-12,Pizzeria Fanucci,Food,36.93
+2026-10-12,Coffee & croissant,Food,2.00
+2026-10-12,Bus / metro ticket,Transport,2.20
+2026-10-13,Groceries - Bignami Market,Food,70.78
+2026-10-13,Coffee & croissant,Food,4.39
+2026-10-13,Bus / metro ticket,Transport,2.20
+2026-10-14,Coffee & croissant,Food,4.07
+2026-10-14,Pizzeria Schiaparelli,Food,25.48
+2026-10-14,Bus / metro ticket,Transport,2.20
 2026-10-15,Netflix subscription,Entertainment,13.99
 2026-10-15,Bus / metro ticket,Transport,2.20
-2026-10-17,Groceries - Bondumier Market,Food,57.26
-2026-10-17,Burger place Tosi,Food,10.44
-2026-10-17,Concert,Entertainment,31.95
-2026-10-18,Headphones - Ligorio Store,Shopping,77.70
-2026-10-18,Fuel,Transport,62.35
-2026-10-18,Groceries - Giolitti Market,Food,62.48
-2026-10-19,Coffee & croissant,Food,4.22
+2026-10-16,Coffee & croissant,Food,3.02
+2026-10-16,Bus / metro ticket,Transport,2.20
+2026-10-17,Groceries - Frescobaldi Market,Food,37.94
+2026-10-17,Trattoria Calbo,Food,16.34
+2026-10-18,Sushi bar Boitani,Food,19.03
+2026-10-18,Bowling,Entertainment,10.88
+2026-10-19,Groceries - Gremese Market,Food,51.06
 2026-10-19,Bus / metro ticket,Transport,2.20
-2026-10-20,Groceries - Spanevello Market,Food,18.42
-2026-10-20,Electricity bill,Bills,61.00
-2026-10-21,Coffee & croissant,Food,2.68
-2026-10-21,Bus / metro ticket,Transport,2.20
-2026-10-22,Groceries - Gabba Market,Food,66.87
+2026-10-20,Taxi ride,Transport,21.79
+2026-10-20,Groceries - Florio Market,Food,28.57
+2026-10-20,Coffee & croissant,Food,2.69
+2026-10-20,Electricity bill,Bills,54.26
+2026-10-21,Coffee & croissant,Food,2.00
 2026-10-22,Bus / metro ticket,Transport,2.20
-2026-10-22,Taxi ride,Transport,18.95
-2026-10-24,Cinema tickets,Entertainment,25.42
-2026-10-24,Groceries - Vattimo Market,Food,71.62
-2026-10-24,Sushi bar Cherubini,Food,33.52
-2026-10-25,Concert,Entertainment,35.54
-2026-10-26,Coffee & croissant,Food,4.10
-2026-10-27,Groceries - Serraglio Market,Food,67.45
-2026-10-27,Coffee & croissant,Food,2.61
-2026-10-27,Trattoria Golino,Food,12.98
+2026-10-23,Coffee & croissant,Food,2.21
+2026-10-23,Bus / metro ticket,Transport,2.20
+2026-10-24,Groceries - Bonaventura Market,Food,22.09
+2026-10-25,Burger place Ruggeri,Food,18.53
+2026-10-25,Video game,Entertainment,27.42
+2026-10-26,Coffee & croissant,Food,3.69
+2026-10-26,Bus / metro ticket,Transport,2.20
+2026-10-27,Groceries - Ungaretti Market,Food,62.79
+2026-10-27,Coffee & croissant,Food,4.06
 2026-10-27,Bus / metro ticket,Transport,2.20
+2026-10-27,Fuel,Transport,59.98
+2026-10-27,Pharmacy,Health,10.84
+2026-10-28,Kebab Cusano,Food,21.10
 2026-10-28,Bus / metro ticket,Transport,2.20
-2026-10-28,Headphones - Serraglio Store,Shopping,34.61
-2026-10-29,Stationery,Other,23.27
+2026-10-28,Coffee & croissant,Food,1.86
 2026-10-29,Bus / metro ticket,Transport,2.20
+2026-10-30,Coffee & croissant,Food,4.38
 2026-10-30,Bus / metro ticket,Transport,2.20
-2026-10-30,Fuel,Transport,35.12
-2026-10-31,Groceries - Pisaroni Market,Food,23.85
-2026-10-31,Bowling,Entertainment,24.87
-2026-11-01,Pharmacy,Health,10.61
+2026-10-31,Groceries - Giacconi Market,Food,35.91
+2026-10-31,Museum,Entertainment,8.07
 2026-11-01,Monthly rent,Housing,450.00
-2026-11-02,Coffee & croissant,Food,3.16
-2026-11-03,Coffee & croissant,Food,2.09
-2026-11-03,Groceries - Favata Market,Food,51.85
-2026-11-03,Bus / metro ticket,Transport,2.20
+2026-11-01,Cinema tickets,Entertainment,11.06
+2026-11-02,Groceries - Milanesi Market,Food,36.68
+2026-11-02,Bus / metro ticket,Transport,2.20
+2026-11-02,Pizzeria Crispi,Food,37.01
+2026-11-02,Coffee & croissant,Food,3.93
+2026-11-03,Groceries - Bertolucci Market,Food,60.11
 2026-11-03,Gym membership,Health,35.00
-2026-11-04,Burger place Caccioppoli,Food,28.19
 2026-11-04,Bus / metro ticket,Transport,2.20
-2026-11-05,Trattoria Cagnin,Food,26.66
+2026-11-05,Bus / metro ticket,Transport,2.20
+2026-11-05,Coffee & croissant,Food,2.84
 2026-11-05,Internet - FiberNet,Bills,27.90
-2026-11-05,Coffee & croissant,Food,2.11
-2026-11-06,Bus / metro ticket,Transport,2.20
-2026-11-06,Taxi ride,Transport,11.60
-2026-11-06,Books - Ricciardi Store,Shopping,84.25
-2026-11-07,Shoes - Randazzo Store,Shopping,106.41
-2026-11-07,Bowling,Entertainment,17.77
-2026-11-07,Groceries - Nolcini Market,Food,47.17
-2026-11-08,Pizzeria Polani,Food,11.75
+2026-11-06,Pharmacy,Health,8.19
+2026-11-07,Groceries - Pacetti Market,Food,41.56
+2026-11-07,Fuel,Transport,43.47
+2026-11-08,Concert,Entertainment,23.02
+2026-11-09,Coffee & croissant,Food,2.81
 2026-11-09,Bus / metro ticket,Transport,2.20
-2026-11-10,Groceries - Schiavone Market,Food,39.99
+2026-11-10,Gift - Gelli Store,Shopping,94.47
 2026-11-10,Phone plan,Bills,9.99
 2026-11-10,Bus / metro ticket,Transport,2.20
-2026-11-11,Pharmacy,Health,22.11
-2026-11-11,Coffee & croissant,Food,3.40
-2026-11-11,Bus / metro ticket,Transport,2.20
-2026-11-12,Coffee & croissant,Food,4.29
-2026-11-12,Burger place Bernini,Food,21.78
+2026-11-10,Coffee & croissant,Food,2.21
+2026-11-10,Groceries - Prodi Market,Food,62.87
+2026-11-11,Donation,Other,15.25
 2026-11-12,Bus / metro ticket,Transport,2.20
-2026-11-12,Taxi ride,Transport,25.63
+2026-11-12,Sushi bar Puccini,Food,35.04
+2026-11-13,Coffee & croissant,Food,3.47
 2026-11-13,Bus / metro ticket,Transport,2.20
-2026-11-14,Groceries - Caironi Market,Food,55.83
-2026-11-14,Pharmacy,Health,28.36
+2026-11-13,Kebab Donati,Food,30.71
+2026-11-14,Groceries - Palladio Market,Food,18.65
+2026-11-14,Sushi bar Comencini,Food,30.92
 2026-11-15,Netflix subscription,Entertainment,13.99
-2026-11-16,Pharmacy,Health,15.09
-2026-11-16,Coffee & croissant,Food,4.01
-2026-11-16,Burger place Bignardi,Food,32.24
-2026-11-16,Bus / metro ticket,Transport,2.20
-2026-11-16,Gift - Pinamonte Store,Shopping,92.49
-2026-11-17,Groceries - Morlacchi Market,Food,49.30
-2026-11-19,Coffee & croissant,Food,3.58
-2026-11-19,Sushi bar Cantimori,Food,33.07
+2026-11-15,Trattoria Tasso,Food,14.14
+2026-11-17,Groceries - Dossi Market,Food,70.21
+2026-11-17,Coffee & croissant,Food,2.10
+2026-11-17,Bus / metro ticket,Transport,2.20
+2026-11-17,Phone case - Soderini Store,Shopping,58.74
+2026-11-18,Coffee & croissant,Food,3.39
+2026-11-18,Bus / metro ticket,Transport,2.20
+2026-11-19,Coffee & croissant,Food,2.10
+2026-11-19,Bus / metro ticket,Transport,2.20
 2026-11-20,Bus / metro ticket,Transport,2.20
-2026-11-20,Electricity bill,Bills,97.47
-2026-11-21,Groceries - Grasso Market,Food,62.54
-2026-11-22,Gas heating bill,Bills,68.03
-2026-11-23,Coffee & croissant,Food,3.17
-2026-11-23,Bus / metro ticket,Transport,2.20
-2026-11-24,Groceries - Fermi Market,Food,68.31
-2026-11-24,Coffee & croissant,Food,2.84
+2026-11-20,Coffee & croissant,Food,2.49
+2026-11-20,Electricity bill,Bills,77.45
+2026-11-21,Groceries - Sforza Market,Food,72.87
+2026-11-21,Sushi bar Scialpi,Food,15.17
+2026-11-22,Clothes - Donini Store,Shopping,29.55
+2026-11-22,Trattoria Schicchi,Food,26.52
+2026-11-22,Gas heating bill,Bills,93.51
+2026-11-23,Burger place Righi,Food,12.43
+2026-11-24,Groceries - Bombieri Market,Food,61.11
+2026-11-24,Bus / metro ticket,Transport,2.20

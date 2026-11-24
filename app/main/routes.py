@@ -1,6 +1,6 @@
 import csv
 import io
-from datetime import date, datetime, timedelta
+from datetime import date
 
 from flask import (render_template, redirect, url_for, flash, request,
                    abort, current_app, Response)
@@ -10,6 +10,7 @@ from sqlalchemy import func
 from . import main_bp
 from ..extensions import db
 from ..models import Expense, Category
+from ..services import expense_query, month_summary
 from .forms import ExpenseForm
 
 @main_bp.route("/")
@@ -22,83 +23,27 @@ def index():
 @main_bp.route("/dashboard")
 @login_required
 def dashboard():
-    today = date.today()
-    first_day = today.replace(day=1)
-    next_month = (first_day + timedelta(days=32)).replace(day=1)
-    days_in_month = (next_month - first_day).days
-
-    # only MY expenses of THIS month
-    this_month = (
-        Expense.user_id == current_user.id,
-        Expense.date >= first_day,
-        Expense.date < next_month,
-    )
-
-    # --- stat cards ---
-    spent = float(db.session.query(func.coalesce(func.sum(Expense.amount), 0))
-                  .filter(*this_month).scalar())
-    budget = float(current_user.monthly_budget)
-    left = budget - spent
-    percent = min(round(spent / budget * 100), 100) if budget else 0
-    days_passed = today.day
-    days_left = days_in_month - today.day
-    daily_avg = spent / days_passed
-    per_day_left = (left / days_left) if days_left > 0 and left > 0 else 0
-
-    # --- "By category" donut ---
-    rows = (db.session.query(Category, func.sum(Expense.amount).label("total"))
-            .join(Expense, Expense.category_id == Category.id)
-            .filter(*this_month)
-            .group_by(Category.id)
-            .order_by(func.sum(Expense.amount).desc())
-            .all())
-    by_category = [(cat, float(total)) for cat, total in rows]
+    stats = month_summary(current_user)          # all the numbers (see app/services.py)
 
     # build a CSS conic-gradient like "#f59f00 0% 32%, #206bc4 32% 50%, ..."
     stops, start = [], 0.0
-    for cat, total in by_category:
-        end = start + (total / spent * 100 if spent else 0)
+    for cat, total in stats["by_category"]:
+        end = start + (total / stats["spent"] * 100 if stats["spent"] else 0)
         stops.append(f"{cat.color} {start:.2f}% {end:.2f}%")
         start = end
     donut_gradient = f"conic-gradient({', '.join(stops)})" if stops else "none"
 
-    # --- "Daily spending" bars: one value per day, from the 1st to today ---
-    daily_rows = (db.session.query(Expense.date, func.sum(Expense.amount))
-                  .filter(*this_month)
-                  .group_by(Expense.date)
-                  .all())
-    totals_by_day = {d: float(t) for d, t in daily_rows}
-    daily = [(first_day + timedelta(days=i), totals_by_day.get(first_day + timedelta(days=i), 0.0))
-             for i in range(today.day)]
-    max_daily = max((t for _, t in daily), default=0)
-
-    # --- "Recent transactions" table ---
     recent = (Expense.query.filter_by(user_id=current_user.id)
               .order_by(Expense.date.desc(), Expense.id.desc())
               .limit(6).all())
 
-    return render_template(
-        "main/dashboard.html",
-        spent=spent, budget=budget, left=left, percent=percent,
-        days_passed=days_passed, days_left=days_left,
-        daily_avg=daily_avg, per_day_left=per_day_left,
-        by_category=by_category, donut_gradient=donut_gradient,
-        daily=daily, max_daily=max_daily, first_day=first_day,
-        recent=recent,
-    )
+    return render_template("main/dashboard.html", **stats,
+                           donut_gradient=donut_gradient, recent=recent)
 
 # =====================================================================
 #  STEP 5: Expenses CRUD
 # =====================================================================
 
-def month_range(value):
-    """'2026-11' -> (date(2026, 11, 1), date(2026, 12, 1)). Invalid -> (None, None)."""
-    try:
-        start = datetime.strptime(value, "%Y-%m").date()
-    except (TypeError, ValueError):
-        return None, None
-    end = (start + timedelta(days=32)).replace(day=1)
-    return start, end
 
 
 def category_choices():
@@ -119,19 +64,11 @@ def filtered_expenses():
     category_id = request.args.get("category", type=int)
     month = request.args.get("month", "")
 
-    query = Expense.query.filter_by(user_id=current_user.id)
-    if q:
-        query = query.filter(Expense.description.ilike(f"%{q}%"))
-    if category_id:
-        query = query.filter(Expense.category_id == category_id)
-    start, end = month_range(month)
-    if start:
-        query = query.filter(Expense.date >= start, Expense.date < end)
+    query = expense_query(current_user.id, q=q, category_id=category_id, month=month)
 
     # only keep the filters that are actually used (for links and the form)
     filters = {k: v for k, v in {"q": q, "category": category_id, "month": month}.items() if v}
     return query, filters
-
 
 @main_bp.route("/expenses")
 @login_required

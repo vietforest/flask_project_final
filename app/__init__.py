@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
 from datetime import date
 from config import config
 from .extensions import db, migrate, login_manager, csrf
@@ -31,18 +31,33 @@ def create_app(config_name=None):
     from .auth import auth_bp                         # NEW
     app.register_blueprint(auth_bp, url_prefix="/auth")
 
+    from .api import api_bp
+    app.register_blueprint(api_bp, url_prefix="/api")
+
+    # not logged in -> JSON 401 for the API, redirect to login for pages
+    @login_manager.unauthorized_handler
+    def unauthorized():
+        if request.path.startswith("/api/"):
+            return jsonify(error="Authentication required."), 401
+        flash(login_manager.login_message, login_manager.login_message_category)
+        return redirect(url_for(login_manager.login_view, next=request.full_path.rstrip("?")))
+
     from .commands import register_commands  # NEW
     register_commands(app)                    # NEW
 
 
         # friendly error pages (403 = not yours, 404 = doesn't exist)
     ERRORS = {
+        400: ("Bad request", "The request could not be understood."),
         403: ("Not allowed", "You don't have permission to see this page."),
         404: ("Page not found", "The page or item you're looking for doesn't exist."),
+        405: ("Method not allowed", "This action is not allowed here."),
     }
 
     def handle_error(error):
         title, message = ERRORS[error.code]
+        if request.path.startswith("/api/"):          # the API always answers JSON
+            return jsonify(error=title), error.code
         return render_template("errors/error.html", code=error.code,
                                title=title, message=message), error.code
 
