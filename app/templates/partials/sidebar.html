@@ -5,7 +5,7 @@
 #}
 {% set nav_items = [
   ("dashboard",    url_for("main.dashboard"), "Overview",     "home"),
-  ("transactions", "#",                       "Transactions", "list"),
+  ("transactions", url_for("main.expenses"),  "Transactions", "list"),
   ("budgets",      "#",                       "Budgets",      "budget"),
   ("reports",      "#",                       "Reports",      "chart"),
   ("settings",     "#",                       "Settings",     "settings"),
@@ -26,7 +26,7 @@
     {% endfor %}
   </nav>
 
-  <a href="#" class="btn-aero btn-aero-green w-100">{{ icon("plus", 18) }} Add expense</a>
+  <a href="{{ url_for('main.expense_new') }}" class="btn-aero btn-aero-green w-100">{{ icon("plus", 18) }} Add expense</a>
 
   <div class="side-user">
     <span class="side-user-name">

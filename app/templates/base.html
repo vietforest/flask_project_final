@@ -36,9 +36,9 @@
             <h1 class="page-title">{% block page_title %}{% endblock %}</h1>
           </div>
           <div class="topbar-actions">
-            <form class="search-pill" action="#" method="get" role="search">
+            <form class="search-pill" action="{{ url_for('main.expenses') }}" method="get" role="search">
               {{ icon("search", 18) }}
-              <input type="search" name="q" placeholder="Search expenses" aria-label="Search expenses">
+              <input type="search" name="q" value="{{ request.args.get('q', '') }}" placeholder="Search expenses" aria-label="Search expenses">
             </form>
             <button type="button" class="orb-btn" aria-label="Notifications">{{ icon("bell", 20) }}</button>
           </div>

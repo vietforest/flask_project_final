@@ -1,6 +1,7 @@
+import csv
 import random
-from datetime import date, timedelta
-from decimal import Decimal
+from datetime import date, datetime, timedelta
+from decimal import Decimal, InvalidOperation
 
 import click
 
@@ -108,4 +109,52 @@ def register_commands(app):
         db.session.commit()
         click.echo("Demo data created. Logins:")
         for username, _, password, role in demo_users:
-            click.echo(f"  {username} / {password}  ({role})")    
+            click.echo(f"  {username} / {password}  ({role})")
+
+    @app.cli.command("import-csv")
+    @click.argument("path", type=click.Path(exists=True, dir_okay=False))
+    @click.option("--user", "username", required=True, help="Username who will own the expenses.")
+    @click.option("--replace", is_flag=True, help="Delete this user's existing expenses first.")
+    def import_csv(path, username, replace):
+        """Import expenses from a CSV with columns: date,description,category,amount"""
+        user = User.query.filter_by(username=username).first()
+        if user is None:
+            raise click.ClickException(f"User '{username}' not found.")
+
+        # map category name -> id, e.g. {"Food": 1, "Transport": 2, ...}
+        categories = {c.name: c.id for c in Category.query.all()}
+        if not categories:
+            raise click.ClickException("No categories found. Run `flask seed` first.")
+
+        if replace:
+            deleted = Expense.query.filter_by(user_id=user.id).delete()
+            click.echo(f"Deleted {deleted} existing expenses of '{username}'.")
+
+        imported, skipped = 0, 0
+        with open(path, newline="", encoding="utf-8") as f:
+            for line_no, row in enumerate(csv.DictReader(f), start=2):  # line 1 = header
+                try:
+                    category_id = categories[row["category"].strip()]
+                    amount = Decimal(row["amount"])
+                    if amount <= 0:
+                        raise ValueError("amount must be positive")
+                    expense = Expense(
+                        user_id=user.id,
+                        category_id=category_id,
+                        description=row["description"].strip()[:200],
+                        amount=amount,
+                        date=datetime.strptime(row["date"].strip(), "%Y-%m-%d").date(),
+                    )
+                except KeyError as e:
+                    click.echo(f"  line {line_no} skipped: unknown category or missing column {e}")
+                    skipped += 1
+                    continue
+                except (ValueError, InvalidOperation):
+                    click.echo(f"  line {line_no} skipped: invalid date or amount")
+                    skipped += 1
+                    continue
+                db.session.add(expense)
+                imported += 1
+
+        db.session.commit()
+        click.echo(f"Imported {imported} expenses for '{username}' ({skipped} skipped).")

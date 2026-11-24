@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 from datetime import date
 from config import config
 from .extensions import db, migrate, login_manager, csrf
@@ -33,6 +33,21 @@ def create_app(config_name=None):
 
     from .commands import register_commands  # NEW
     register_commands(app)                    # NEW
+
+
+        # friendly error pages (403 = not yours, 404 = doesn't exist)
+    ERRORS = {
+        403: ("Not allowed", "You don't have permission to see this page."),
+        404: ("Page not found", "The page or item you're looking for doesn't exist."),
+    }
+
+    def handle_error(error):
+        title, message = ERRORS[error.code]
+        return render_template("errors/error.html", code=error.code,
+                               title=title, message=message), error.code
+
+    for code in ERRORS:
+        app.register_error_handler(code, handle_error)
 
     @app.shell_context_processor              # NEW: handy objects in `flask shell`
     def shell_context():

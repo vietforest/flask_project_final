@@ -1,7 +1,12 @@
+{#
+  render_field(form.amount, "0.00", type="number", step="0.01")
+  Any extra keyword (type, step, min...) is passed to the <input>.
+#}
 {% macro render_field(field, placeholder="") %}
+{% set css = "form-select" if field.type == "SelectField" else "form-control" %}
 <div class="mb-3">
   {{ field.label(class_="form-label") }}
-  {{ field(class_="form-control" + (" is-invalid" if field.errors else ""), placeholder=placeholder) }}
+  {{ field(class_=css + (" is-invalid" if field.errors else ""), placeholder=placeholder, **kwargs) }}
   {% for error in field.errors %}
     <div class="invalid-feedback">{{ error }}</div>
   {% endfor %}

@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% from "partials/_icons.html" import icon %}
+{% set active_page = "transactions" %}
+{% block title %}Transactions · My Wallet{% endblock %}
+{% block page_title %}Transactions{% endblock %}
+
+{% block content %}
+
+{# ---------- Filters ---------- #}
+<section class="glass card-pad">
+  <form method="get" action="{{ url_for('main.expenses') }}" class="filter-bar">
+    <div class="filter-field filter-grow">
+      <label class="form-label" for="q">Search</label>
+      <input type="search" id="q" name="q" class="form-control"
+             value="{{ filters.q or '' }}" placeholder="e.g. pizza, rent...">
+    </div>
+
+    <div class="filter-field">
+      <label class="form-label" for="category">Category</label>
+      <select id="category" name="category" class="form-select">
+        <option value="">All categories</option>
+        {% for c in categories %}
+          <option value="{{ c.id }}" {% if filters.category == c.id %}selected{% endif %}>{{ c.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="filter-field">
+      <label class="form-label" for="month">Month</label>
+      <input type="month" id="month" name="month" class="form-control" value="{{ filters.month or '' }}">
+    </div>
+
+    <div class="filter-actions">
+      <button type="submit" class="btn-aero btn-aero-blue">Filter</button>
+      {% if filters %}
+        <a href="{{ url_for('main.expenses') }}" class="btn-glass">Reset</a>
+      {% endif %}
+    </div>
+  </form>
+</section>
+
+{# ---------- Table ---------- #}
+<section class="glass card-pad glass-strong">
+  <div class="card-head">
+    <div>
+      <h2>{{ pagination.total }} expense{{ "s" if pagination.total != 1 }}</h2>
+      <span class="sub">Total: {{ total|money }}</span>
+    </div>
+    <div class="head-actions">
+      <a href="{{ url_for('main.expenses_export', **filters) }}" class="btn-glass">
+        {{ icon("download", 18) }} Export CSV
+      </a>
+      <a href="{{ url_for('main.expense_new') }}" class="btn-aero btn-aero-green">
+        {{ icon("plus", 18) }} Add expense
+      </a>
+    </div>
+  </div>
+
+  {% if pagination.items %}
+    <div class="table-responsive">
+      <table class="aero-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th class="d-none d-md-table-cell">Category</th>
+            <th class="d-none d-md-table-cell">Date</th>
+            <th class="text-end">Amount</th>
+            <th class="text-end"><span class="visually-hidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for e in pagination.items %}
+            <tr>
+              <td>
+                <div class="desc-cell">
+                  <span class="orb" style="--c: {{ e.category.color }}"></span>
+                  <div>
+                    <span class="fw-bold">{{ e.description }}</span>
+                    <small class="d-md-none">{{ e.category.name }} · {{ e.date.strftime("%b %d") }}</small>
+                  </div>
+                </div>
+              </td>
+              <td class="d-none d-md-table-cell">{{ e.category.name }}</td>
+              <td class="d-none d-md-table-cell nowrap">{{ e.date.strftime("%b %d, %Y") }}</td>
+              <td class="text-end fw-bold nowrap">−{{ e.amount|money }}</td>
+              <td class="text-end nowrap">
+                <a href="{{ url_for('main.expense_edit', expense_id=e.id) }}" class="icon-btn"
+                   title="Edit" aria-label="Edit {{ e.description }}">{{ icon("edit", 18) }}</a>
+                <form method="post" action="{{ url_for('main.expense_delete', expense_id=e.id) }}"
+                      class="d-inline" onsubmit="return confirm('Delete this expense?');">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <button type="submit" class="icon-btn icon-btn-danger"
+                          title="Delete" aria-label="Delete {{ e.description }}">{{ icon("trash", 18) }}</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {# ---------- Pagination ---------- #}
+    {% if pagination.pages > 1 %}
+      <nav class="aero-pagination" aria-label="Pages">
+        {% if pagination.has_prev %}
+          <a href="{{ url_for('main.expenses', page=pagination.prev_num, **filters) }}">‹ Prev</a>
+        {% endif %}
+        {% for p in pagination.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+          {% if p is none %}
+            <span class="gap">…</span>
+          {% elif p == pagination.page %}
+            <span class="current" aria-current="page">{{ p }}</span>
+          {% else %}
+            <a href="{{ url_for('main.expenses', page=p, **filters) }}">{{ p }}</a>
+          {% endif %}
+        {% endfor %}
+        {% if pagination.has_next %}
+          <a href="{{ url_for('main.expenses', page=pagination.next_num, **filters) }}">Next ›</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+
+  {% else %}
+    <p class="empty">
+      {% if filters %}No expenses match these filters.
+      {% else %}No expenses yet. Click <strong>Add expense</strong> to create your first one.{% endif %}
+    </p>
+  {% endif %}
+</section>
+{% endblock %}

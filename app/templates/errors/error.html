@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ code }} · My Wallet{% endblock %}
+{% block page_title %}Oops!{% endblock %}
+
+{% block content %}
+<section class="glass card-pad error-card">
+  <div class="error-code">{{ code }}</div>
+  <h2>{{ title }}</h2>
+  <p class="sub">{{ message }}</p>
+  <a href="{{ url_for('main.index') }}" class="btn-aero btn-aero-blue">Back to home</a>
+</section>
+{% endblock %}

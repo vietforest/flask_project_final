@@ -350,13 +350,13 @@ body.aero {
 .aero .form-label { font-weight: 800; color: var(--ink); }
 .aero .form-control, .aero .form-select {
   border-radius: 14px;
-  background: rgba(255,255,255,.7);
+  background-color: rgba(255,255,255,.7);   /* background-color keeps the select arrow */
   border: 1.5px solid rgba(255,255,255,.95);
   box-shadow: inset 0 1px 3px rgba(16,92,150,.15);
   color: var(--ink); font-weight: 600; font-family: inherit;
 }
 .aero .form-control:focus, .aero .form-select:focus {
-  background: #fff;
+  background-color: #fff;
   border-color: #6cc0f5;
   box-shadow: 0 0 0 4px rgba(47,155,232,.2);
 }
@@ -376,6 +376,67 @@ body.aero {
 .auth-main h1 { color: #fff; font-weight: 900; text-shadow: 0 2px 10px rgba(11,58,91,.3); }
 .auth-main .text-secondary { color: var(--ink) !important; }
 
+/* ---------- 8. Step 5: transactions, forms, errors ---------- */
+.btn-aero-blue {
+  background: linear-gradient(180deg, #8fd6fb 0%, #2f9be8 48%, #1679cc 52%, #2a90df 100%);
+  box-shadow: 0 5px 14px rgba(22,121,204,.35), inset 0 1px 0 rgba(255,255,255,.8);
+}
+/* light glass button (secondary actions) */
+.aero .btn-glass {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 999px;
+  font-weight: 800; color: var(--ink); text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(220,240,252,.85));
+  border: 1.5px solid #fff;
+  box-shadow: 0 3px 10px rgba(16,92,150,.15);
+}
+.aero .btn-glass:hover { filter: brightness(1.04); color: var(--ink); }
+
+.filter-bar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; }
+.filter-field { min-width: 170px; }
+.filter-field .form-label { margin-bottom: 4px; }
+.filter-grow { flex: 1; min-width: 200px; }
+.filter-actions { display: flex; gap: 8px; }
+
+.head-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.card-head:has(.head-actions) { align-items: center; flex-wrap: wrap; gap: 12px; }
+
+/* small round icon buttons (edit / delete) */
+.icon-btn {
+  display: inline-grid; place-items: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,.9);
+  background: rgba(255,255,255,.6);
+  color: var(--ink); cursor: pointer;
+}
+.aero a.icon-btn { color: var(--ink); }
+.icon-btn:hover { background: #fff; }
+.icon-btn-danger:hover { color: var(--bad); }
+
+.aero-pagination { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 18px; }
+.aero-pagination a, .aero-pagination span {
+  min-width: 38px; padding: 7px 12px; border-radius: 999px; text-align: center;
+  font-weight: 800; text-decoration: none;
+}
+.aero .aero-pagination a { color: var(--ink); background: rgba(255,255,255,.55); border: 1.5px solid rgba(255,255,255,.9); }
+.aero-pagination a:hover { background: #fff; }
+.aero-pagination .current {
+  color: #fff; border: 1.5px solid rgba(255,255,255,.9);
+  background: linear-gradient(180deg, #8fd6fb 0%, #2f9be8 48%, #1679cc 52%, #2a90df 100%);
+}
+.aero-pagination .gap { color: var(--ink-soft); }
+
+.form-card { max-width: 640px; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.form-actions { display: flex; gap: 10px; margin-top: 8px; }
+
+.error-card { max-width: 520px; text-align: center; margin: 20px auto; }
+.error-code {
+  font-size: 5rem; font-weight: 900; line-height: 1;
+  color: #fff; text-shadow: 0 3px 0 rgba(11,58,91,.25), 0 6px 18px rgba(22,121,204,.4);
+}
+.error-card h2 { margin: 10px 0 6px; }
+.error-card .btn-aero { margin-top: 16px; }
 
 /* ---------- 9. Responsive ---------- */
 @media (max-width: 1199px) {
@@ -401,4 +462,8 @@ body.aero {
   .card-pad   { padding: 18px; }
   .bars { gap: 3px; }
   .bar-label { font-size: .6rem; }
+  .filter-field, .filter-grow { flex: 1 1 100%; }
+  .aero-table td { padding: 10px 6px; }
+  .orb { width: 26px; height: 26px; margin-right: 10px; }
+  .icon-btn { width: 30px; height: 30px; }
 }

@@ -7,3 +7,7 @@ flask seed-demo   # demo users + 60 random expenses each
 | demo       | demo1234  | user  |
 | mario      | mario1234 | user  |
 | admin_demo | admin1234 | admin |
+
+
+python scripts/generate_data.py --seed 42
+flask import-csv data/transactions.csv --user demo --replace
