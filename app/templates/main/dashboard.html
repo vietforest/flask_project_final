@@ -1,9 +1,123 @@
 {% extends "base.html" %}
+{% set active_page = "dashboard" %}
+{% block title %}Overview · My Wallet{% endblock %}
+{% block page_title %}Overview{% endblock %}
+
 {% block content %}
-<div class="card">
-  <div class="card-body">
-    <h2>Hello {{ current_user.username }}! 👋</h2>
-    <p class="text-secondary">Your dashboard will appear here.</p>
+
+{# ---------- Row 1: stat cards ---------- #}
+<section class="grid-stats">
+  <article class="glass card-pad stat-main">
+    <div class="label">Spent this month</div>
+    <div class="amount-xl">{{ spent|money }}</div>
+    <div class="sub">of {{ budget|money(0) }} budget · {{ percent }}%</div>
+    <div class="aero-progress" role="progressbar" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100">
+      <div class="aero-progress-fill {% if percent >= 90 %}is-danger{% elif percent >= 70 %}is-warning{% endif %}"
+           style="width: {{ percent }}%"></div>
+    </div>
+  </article>
+
+  <article class="glass card-pad">
+    <div class="label">Left to spend</div>
+    <div class="amount-lg {{ 'text-good' if left >= 0 else 'text-bad' }}">{{ left|money }}</div>
+    <div class="sub">{{ days_left }} days to go · about {{ per_day_left|money(0) }}/day</div>
+  </article>
+
+  <article class="glass card-pad">
+    <div class="label">Daily average</div>
+    <div class="amount-lg">{{ daily_avg|money }}</div>
+    <div class="sub">Over {{ days_passed }} days so far</div>
+  </article>
+</section>
+
+{# ---------- Row 2: charts ---------- #}
+<section class="grid-charts">
+  <article class="glass card-pad">
+    <div class="card-head">
+      <h2>Daily spending</h2>
+      <span class="sub">{{ first_day.strftime("%b") }} 1 – {{ today.day }}</span>
+    </div>
+    <div class="bars">
+      {% for day, total in daily %}
+        <div class="bar-col" title="{{ day.strftime('%b %d') }}: {{ total|money }}">
+          <div class="bar-area">
+            <div class="bar {% if loop.last %}is-today{% endif %}"
+                 style="height: {{ (total / max_daily * 100) if max_daily else 0 }}%"></div>
+          </div>
+          <span class="bar-label">{{ day.day }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="glass card-pad">
+    <div class="card-head"><h2>By category</h2></div>
+    {% if by_category %}
+      <div class="donut-wrap">
+        <div class="donut" style="background: {{ donut_gradient }}">
+          <div class="donut-hole">
+            <small>Total</small>
+            <strong>{{ spent|money(0) }}</strong>
+          </div>
+        </div>
+        <ul class="cat-legend">
+          {% for cat, total in by_category %}
+            <li>
+              <span class="orb orb-sm" style="--c: {{ cat.color }}"></span>
+              <span class="cat-legend-name">{{ cat.name }}</span>
+              <strong>{{ total|money }}</strong>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% else %}
+      <p class="empty">No expenses this month yet.</p>
+    {% endif %}
+  </article>
+</section>
+
+{# ---------- Row 3: recent transactions ---------- #}
+<section class="glass card-pad glass-strong">
+  <div class="card-head">
+    <h2>Recent transactions</h2>
+    <a href="#" class="link-strong">See all</a>
   </div>
-</div>
+
+  {% if recent %}
+    <div class="table-responsive">
+      <table class="aero-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th class="d-none d-md-table-cell">Category</th>
+            <th class="d-none d-md-table-cell">Date</th>
+            <th class="text-end">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for e in recent %}
+            <tr>
+              <td>
+                <div class="desc-cell">
+                  <span class="orb" style="--c: {{ e.category.color }}"></span>
+                  <div>
+                    <span class="fw-bold">{{ e.description }}</span>
+                    {# on phones the category/date columns are hidden, so show them here #}
+                    <small class="d-md-none">{{ e.category.name }} · {{ e.date.strftime("%b %d") }}</small>
+                  </div>
+                </div>
+              </td>
+              <td class="d-none d-md-table-cell">{{ e.category.name }}</td>
+              <td class="d-none d-md-table-cell nowrap">{{ e.date.strftime("%b %d") }}</td>
+              <td class="text-end fw-bold nowrap">−{{ e.amount|money }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p class="empty">No expenses yet. Click <strong>Add expense</strong> to create your first one.</p>
+  {% endif %}
+</section>
+
 {% endblock %}

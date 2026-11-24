@@ -1,4 +1,5 @@
 from datetime import datetime, date, timezone
+from decimal import Decimal
 
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -18,6 +19,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False, index=True)
     password_hash = db.Column(db.String(256), nullable=False)
     role = db.Column(db.String(20), nullable=False, default="user")  # "user" or "admin"
+    monthly_budget = db.Column(db.Numeric(10, 2), nullable=False, default=Decimal("2000.00"), server_default="2000")
     created_at = db.Column(db.DateTime, default=utcnow)
 
     # if a user is deleted, their expenses are deleted too

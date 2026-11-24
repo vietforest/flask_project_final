@@ -1,0 +1,9 @@
+## Demo data
+flask seed        # default categories
+flask seed-demo   # demo users + 60 random expenses each
+
+| Username   | Password  | Role  |
+|------------|-----------|-------|
+| demo       | demo1234  | user  |
+| mario      | mario1234 | user  |
+| admin_demo | admin1234 | admin |

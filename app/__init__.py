@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-
+from datetime import date
 from config import config
 from .extensions import db, migrate, login_manager, csrf
 
@@ -38,5 +38,18 @@ def create_app(config_name=None):
     def shell_context():
         return {"db": db, "User": models.User,
                 "Category": models.Category, "Expense": models.Expense}
+
+    
+# {{ value|money }} in templates -> "€1,284.50"
+    @app.template_filter("money")
+    def money(value, decimals=2):
+        value = float(value or 0)
+        sign = "-" if value < 0 else ""
+        return f"{sign}{app.config['CURRENCY']}{abs(value):,.{decimals}f}"
+
+    # variables available in every template
+    @app.context_processor
+    def inject_globals():
+        return {"today": date.today()}
 
     return app

@@ -3,48 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Expense Tracker{% endblock %}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
+  <title>{% block title %}My Wallet{% endblock %}</title>
+
+  <!-- Nunito: the rounded, friendly font of the design -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap">
+
+  <!-- Tabler: grid, forms and utilities. Our style.css turns it into Frutiger Aero -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.7.5/dist/css/tabler.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-<div class="page">
+<body class="aero">
+
+  <!-- decorative background: sky, hills, light streak and bubbles -->
+  <div class="aero-bg" aria-hidden="true">
+    <span class="streak"></span>
+    <span class="hill hill-back"></span>
+    <span class="hill hill-front"></span>
+    <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+    <span class="bubble b4"></span><span class="bubble b5"></span><span class="bubble b6"></span>
+  </div>
 
   {% if current_user.is_authenticated %}
-  <header class="navbar navbar-expand-md d-print-none">
-    <div class="container-xl">
-      <a class="navbar-brand" href="{{ url_for('main.dashboard') }}">💰 Expense Tracker</a>
-      <div class="navbar-nav flex-row order-md-last align-items-center gap-3">
-        <span class="text-secondary">
-          {{ current_user.username }}
-          {% if current_user.is_admin %}<span class="badge bg-red-lt">admin</span>{% endif %}
-        </span>
-        <form method="post" action="{{ url_for('auth.logout') }}" class="m-0">
-          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-          <button type="submit" class="btn btn-outline-secondary btn-sm">Logout</button>
-        </form>
-      </div>
-    </div>
-  </header>
+    {% from "partials/_icons.html" import icon %}
+    <div class="app">
+      {% include "partials/sidebar.html" %}
+      <main class="app-main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">{% block eyebrow %}{{ today.strftime("%B %Y") }}{% endblock %}</div>
+            <h1 class="page-title">{% block page_title %}{% endblock %}</h1>
+          </div>
+          <div class="topbar-actions">
+            <form class="search-pill" action="#" method="get" role="search">
+              {{ icon("search", 18) }}
+              <input type="search" name="q" placeholder="Search expenses" aria-label="Search expenses">
+            </form>
+            <button type="button" class="orb-btn" aria-label="Notifications">{{ icon("bell", 20) }}</button>
+          </div>
+        </header>
+  {% else %}
+    <main class="auth-main">
   {% endif %}
 
-  <div class="page-wrapper">
-    <div class="container-xl py-4">
+        {% include "partials/flash.html" %}
+        {% block content %}{% endblock %}
 
-      {% with messages = get_flashed_messages(with_categories=true) %}
-        {% for category, message in messages %}
-          <div class="alert alert-{{ category }} alert-dismissible" role="alert">
-            {{ message }}
-            <a class="btn-close" data-bs-dismiss="alert" aria-label="close"></a>
-          </div>
-        {% endfor %}
-      {% endwith %}
-
-      {% block content %}{% endblock %}
+  {% if current_user.is_authenticated %}
+      </main>
     </div>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
-{% block scripts %}{% endblock %}
+  {% else %}
+    </main>
+  {% endif %}
+
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.7.5/dist/js/tabler.min.js"></script>
+  {% block scripts %}{% endblock %}
 </body>
 </html>

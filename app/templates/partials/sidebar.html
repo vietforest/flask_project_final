@@ -1,0 +1,41 @@
+{% from "partials/_icons.html" import icon %}
+{#
+  Each page says which menu item is active with:  {% set active_page = "dashboard" %}
+  Links with "#" are pages we build in the next steps.
+#}
+{% set nav_items = [
+  ("dashboard",    url_for("main.dashboard"), "Overview",     "home"),
+  ("transactions", "#",                       "Transactions", "list"),
+  ("budgets",      "#",                       "Budgets",      "budget"),
+  ("reports",      "#",                       "Reports",      "chart"),
+  ("settings",     "#",                       "Settings",     "settings"),
+] %}
+
+<aside class="sidebar glass">
+  <a class="brand" href="{{ url_for('main.dashboard') }}">
+    <span class="brand-orb">{{ icon("wallet", 20) }}</span>
+    <span class="brand-name">My Wallet</span>
+  </a>
+
+  <nav class="side-nav">
+    {% for key, href, label, ico in nav_items %}
+      <a href="{{ href }}" class="side-link {% if active_page == key %}is-active{% endif %}"
+         {% if active_page == key %}aria-current="page"{% endif %}>
+        {{ icon(ico, 20) }} <span>{{ label }}</span>
+      </a>
+    {% endfor %}
+  </nav>
+
+  <a href="#" class="btn-aero btn-aero-green w-100">{{ icon("plus", 18) }} Add expense</a>
+
+  <div class="side-user">
+    <span class="side-user-name">
+      {{ current_user.username }}
+      {% if current_user.is_admin %}<span class="pill pill-red">admin</span>{% endif %}
+    </span>
+    <form method="post" action="{{ url_for('auth.logout') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button type="submit" class="icon-link" aria-label="Log out" title="Log out">{{ icon("logout", 18) }}</button>
+    </form>
+  </div>
+</aside>
