@@ -438,7 +438,30 @@ body.aero {
 .error-card h2 { margin: 10px 0 6px; }
 .error-card .btn-aero { margin-top: 16px; }
 
-/* ---------- 9. Responsive ---------- */
+
+/* ---------- 9. Step 7: settings + admin ---------- */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; align-items: start; }
+.grid-2 > * { min-width: 0; }
+
+.side-section {
+  margin: 12px 14px 2px;
+  font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.pill-blue { background: #dcefff; color: #0f6bb8; }
+
+.aero .btn-sm-glass { padding: 6px 12px; font-size: .82rem; }
+
+/* colour picker: show it as a round swatch */
+.aero input[type="color"].form-control { width: 64px; height: 44px; padding: 4px; cursor: pointer; }
+
+.info-list { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
+.info-list dt { font-weight: 800; color: var(--ink-soft); }
+.info-list dd { margin: 0; font-weight: 700; }
+
+
+/* ---------- 10. Responsive ---------- */
 @media (max-width: 1199px) {
   .grid-stats  { grid-template-columns: 1fr 1fr; }
   .stat-main   { grid-column: 1 / -1; }

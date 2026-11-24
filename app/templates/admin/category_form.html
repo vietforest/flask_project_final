@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "partials/_icons.html" import icon %}
+{% from "partials/_form_helpers.html" import render_field %}
+{% set active_page = "admin_categories" %}
+{% block title %}Edit category · Admin · My Wallet{% endblock %}
+{% block eyebrow %}Admin{% endblock %}
+{% block page_title %}Edit category{% endblock %}
+
+{% block content %}
+<section class="glass card-pad form-card">
+  <a href="{{ url_for('admin.categories') }}" class="back-link">{{ icon("arrow-left", 18) }} Back to categories</a>
+  <form method="post" novalidate class="mt-3">
+    {{ form.hidden_tag() }}
+    {{ render_field(form.name) }}
+    {{ render_field(form.color, type="color") }}
+    {{ render_field(form.icon) }}
+    <div class="form-actions">
+      {{ form.submit(class_="btn-aero btn-aero-green") }}
+      <a href="{{ url_for('admin.categories') }}" class="btn-glass">Cancel</a>
+    </div>
+  </form>
+</section>
+{% endblock %}

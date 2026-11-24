@@ -1,14 +1,13 @@
 {% from "partials/_icons.html" import icon %}
-{#
-  Each page says which menu item is active with:  {% set active_page = "dashboard" %}
-  Links with "#" are pages we build in the next steps.
-#}
+{# Each page says which menu item is active with:  {% set active_page = "dashboard" %} #}
 {% set nav_items = [
   ("dashboard",    url_for("main.dashboard"), "Overview",     "home"),
   ("transactions", url_for("main.expenses"),  "Transactions", "list"),
-  ("budgets",      "#",                       "Budgets",      "budget"),
-  ("reports",      "#",                       "Reports",      "chart"),
-  ("settings",     "#",                       "Settings",     "settings"),
+  ("settings",     url_for("main.settings"),  "Settings",     "settings"),
+] %}
+{% set admin_items = [
+  ("admin_users",      url_for("admin.users"),      "Users",      "users"),
+  ("admin_categories", url_for("admin.categories"), "Categories", "tag"),
 ] %}
 
 <aside class="sidebar glass">
@@ -24,6 +23,17 @@
         {{ icon(ico, 20) }} <span>{{ label }}</span>
       </a>
     {% endfor %}
+
+    {# admin links: only admins see them (the routes are ALSO protected by @admin_required) #}
+    {% if current_user.is_admin %}
+      <div class="side-section">Admin</div>
+      {% for key, href, label, ico in admin_items %}
+        <a href="{{ href }}" class="side-link {% if active_page == key %}is-active{% endif %}"
+           {% if active_page == key %}aria-current="page"{% endif %}>
+          {{ icon(ico, 20) }} <span>{{ label }}</span>
+        </a>
+      {% endfor %}
+    {% endif %}
   </nav>
 
   <a href="{{ url_for('main.expense_new') }}" class="btn-aero btn-aero-green w-100">{{ icon("plus", 18) }} Add expense</a>

@@ -11,7 +11,7 @@ from . import main_bp
 from ..extensions import db
 from ..models import Expense, Category
 from ..services import expense_query, month_summary
-from .forms import ExpenseForm
+from .forms import ExpenseForm, BudgetForm, PasswordForm
 
 @main_bp.route("/")
 def index():
@@ -153,3 +153,48 @@ def expenses_export():
         mimetype="text/csv",
         headers={"Content-Disposition": f"attachment; filename=expenses_{date.today()}.csv"},
     )
+
+# =====================================================================
+#  STEP 7: Settings (every user)
+# =====================================================================
+
+def render_settings(budget_form=None, password_form=None):
+    # formdata=None: a form that was NOT submitted must not read the other form's data
+    return render_template(
+        "main/settings.html",
+        budget_form=budget_form or BudgetForm(formdata=None, monthly_budget=current_user.monthly_budget),
+        password_form=password_form or PasswordForm(formdata=None),
+    )
+
+
+@main_bp.route("/settings")
+@login_required
+def settings():
+    return render_settings()
+
+
+@main_bp.route("/settings/budget", methods=["POST"])
+@login_required
+def settings_budget():
+    form = BudgetForm()
+    if form.validate_on_submit():
+        current_user.monthly_budget = form.monthly_budget.data
+        db.session.commit()
+        flash("Monthly budget saved.", "success")
+        return redirect(url_for("main.settings"))
+    return render_settings(budget_form=form)
+
+
+@main_bp.route("/settings/password", methods=["POST"])
+@login_required
+def settings_password():
+    form = PasswordForm()
+    if form.validate_on_submit():
+        if not current_user.check_password(form.current_password.data):
+            form.current_password.errors.append("Wrong password.")
+        else:
+            current_user.set_password(form.new_password.data)
+            db.session.commit()
+            flash("Password changed.", "success")
+            return redirect(url_for("main.settings"))
+    return render_settings(password_form=form)

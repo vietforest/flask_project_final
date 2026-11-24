@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "partials/_form_helpers.html" import render_field %}
+{% set active_page = "settings" %}
+{% block title %}Settings · My Wallet{% endblock %}
+{% block page_title %}Settings{% endblock %}
+
+{% block content %}
+<section class="grid-2">
+
+  {# ---------- Monthly budget ---------- #}
+  <article class="glass card-pad">
+    <div class="card-head"><h2>Monthly budget</h2></div>
+    <p class="sub">Used for the progress bar and "left to spend" on the dashboard.</p>
+    <form method="post" action="{{ url_for('main.settings_budget') }}" novalidate>
+      {{ budget_form.hidden_tag() }}
+      {{ render_field(budget_form.monthly_budget, "2000.00", type="number", step="0.01", min="1") }}
+      {{ budget_form.submit_budget(class_="btn-aero btn-aero-green") }}
+    </form>
+  </article>
+
+  {# ---------- Password ---------- #}
+  <article class="glass card-pad">
+    <div class="card-head"><h2>Change password</h2></div>
+    <form method="post" action="{{ url_for('main.settings_password') }}" novalidate>
+      {{ password_form.hidden_tag() }}
+      {{ render_field(password_form.current_password) }}
+      {{ render_field(password_form.new_password, "at least 8 characters") }}
+      {{ render_field(password_form.confirm) }}
+      {{ password_form.submit_password(class_="btn-aero btn-aero-blue") }}
+    </form>
+  </article>
+
+  {# ---------- Account info ---------- #}
+  <article class="glass card-pad">
+    <div class="card-head"><h2>Account</h2></div>
+    <dl class="info-list">
+      <dt>Username</dt><dd>{{ current_user.username }}</dd>
+      <dt>Email</dt><dd>{{ current_user.email }}</dd>
+      <dt>Role</dt><dd>{{ current_user.role }}</dd>
+      <dt>Member since</dt><dd>{{ current_user.created_at.strftime("%b %d, %Y") if current_user.created_at else "—" }}</dd>
+    </dl>
+  </article>
+
+</section>
+{% endblock %}

@@ -31,6 +31,9 @@ def create_app(config_name=None):
     from .auth import auth_bp                         # NEW
     app.register_blueprint(auth_bp, url_prefix="/auth")
 
+    from .admin import admin_bp
+    app.register_blueprint(admin_bp, url_prefix="/admin")
+
     from .api import api_bp
     app.register_blueprint(api_bp, url_prefix="/api")
 

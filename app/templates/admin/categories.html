@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% from "partials/_icons.html" import icon %}
+{% from "partials/_form_helpers.html" import render_field %}
+{% set active_page = "admin_categories" %}
+{% block title %}Categories · Admin · My Wallet{% endblock %}
+{% block eyebrow %}Admin{% endblock %}
+{% block page_title %}Categories{% endblock %}
+
+{% block content %}
+<section class="grid-charts">
+
+  {# ---------- List ---------- #}
+  <article class="glass card-pad glass-strong">
+    <div class="card-head"><h2>{{ rows|length }} categories</h2></div>
+    <div class="table-responsive">
+      <table class="aero-table">
+        <thead>
+          <tr><th>Category</th><th class="text-end">Expenses</th><th class="text-end"><span class="visually-hidden">Actions</span></th></tr>
+        </thead>
+        <tbody>
+          {% for category, used in rows %}
+            <tr>
+              <td>
+                <div class="desc-cell">
+                  <span class="orb" style="--c: {{ category.color }}"></span>
+                  <span class="fw-bold">{{ category.icon }} {{ category.name }}</span>
+                </div>
+              </td>
+              <td class="text-end">{{ used }}</td>
+              <td class="text-end nowrap">
+                <a href="{{ url_for('admin.edit_category', category_id=category.id) }}" class="icon-btn"
+                   title="Edit" aria-label="Edit {{ category.name }}">{{ icon("edit", 18) }}</a>
+                {% if used == 0 %}
+                  <form method="post" action="{{ url_for('admin.delete_category', category_id=category.id) }}"
+                        class="d-inline" onsubmit="return confirm('Delete {{ category.name }}?');">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type="submit" class="icon-btn icon-btn-danger" title="Delete"
+                            aria-label="Delete {{ category.name }}">{{ icon("trash", 18) }}</button>
+                  </form>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="sub mt-2">A category can only be deleted when no expenses use it.</p>
+  </article>
+
+  {# ---------- Add form ---------- #}
+  <article class="glass card-pad">
+    <div class="card-head"><h2>Add category</h2></div>
+    <form method="post" novalidate>
+      {{ form.hidden_tag() }}
+      {{ render_field(form.name, "e.g. Travel") }}
+      {{ render_field(form.color, type="color") }}
+      {{ render_field(form.icon) }}
+      {{ form.submit(class_="btn-aero btn-aero-green") }}
+    </form>
+  </article>
+
+</section>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% from "partials/_icons.html" import icon %}
+{% set active_page = "admin_users" %}
+{% block title %}Users · Admin · My Wallet{% endblock %}
+{% block eyebrow %}Admin{% endblock %}
+{% block page_title %}Users{% endblock %}
+
+{% block content %}
+<section class="glass card-pad glass-strong">
+  <div class="card-head">
+    <h2>{{ rows|length }} users</h2>
+  </div>
+
+  <div class="table-responsive">
+    <table class="aero-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th class="d-none d-md-table-cell">Email</th>
+          <th>Role</th>
+          <th class="text-end d-none d-md-table-cell">Expenses</th>
+          <th class="text-end"><span class="visually-hidden">Actions</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user, expense_count in rows %}
+          <tr>
+            <td>
+              <span class="fw-bold">{{ user.username }}</span>
+              {% if user.id == current_user.id %}<span class="pill pill-blue">you</span>{% endif %}
+            </td>
+            <td class="d-none d-md-table-cell">{{ user.email }}</td>
+            <td>
+              <span class="pill {{ 'pill-red' if user.is_admin else 'pill-blue' }}">{{ user.role }}</span>
+            </td>
+            <td class="text-end d-none d-md-table-cell">{{ expense_count }}</td>
+            <td class="text-end nowrap">
+              {% if user.id != current_user.id %}
+                <form method="post" action="{{ url_for('admin.toggle_role', user_id=user.id) }}" class="d-inline">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <button type="submit" class="btn-glass btn-sm-glass">
+                    {{ "Make user" if user.is_admin else "Make admin" }}
+                  </button>
+                </form>
+                <form method="post" action="{{ url_for('admin.delete_user', user_id=user.id) }}" class="d-inline"
+                      onsubmit="return confirm('Delete {{ user.username }} and all their expenses?');">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <button type="submit" class="icon-btn icon-btn-danger" title="Delete"
+                          aria-label="Delete {{ user.username }}">{{ icon("trash", 18) }}</button>
+                </form>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
